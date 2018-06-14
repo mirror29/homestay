@@ -1,0 +1,13 @@
+<!--pages/submission/submission.wxml-->
+<view class='whole-page'>
+    <view class='picture'>
+        <image src='/images/success.png' class='complete'></image>
+    </view>
+    <view class='writte-words'>
+        <text>已提交申请，请耐心等待客服审核</text>
+    </view>
+    <view class='button-1'>
+        <button class='next-step-1' bindtap='backRelease'>继续发布</button>
+        <button class='next-step-1' bindtap='backIndex'>返回首页</button>
+    </view>
+</view>

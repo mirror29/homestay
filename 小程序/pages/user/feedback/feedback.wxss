@@ -1,0 +1,64 @@
+/* pages/user/feedback/feedback.wxss */
+/* 用户反馈 */
+
+/* --start-- */
+.user-feedback-view {
+  background: #f0f0f0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.user-feedback-body {
+  margin-left: 30rpx;
+  margin-right: 30rpx;  
+}
+/* textarea */
+ .textarea-content-view {
+  background: #fff; 
+  margin-bottom: 30rpx;
+  margin-top: 50rpx;
+  border-radius: 11rpx;
+  border: 3rpx solid #e4e4e4;
+  padding: 30rpx;
+} 
+.textarea-content-view textarea{
+   width: 100%;
+}
+.textarea-placeholder-class {
+  font-size: 32rpx;
+}
+/* 字体大小 */
+.feedback-font-size {
+  font-size: 32rpx;
+}
+.feedback-font-size2 {
+  font-size: 28rpx;
+  line-height: 20rpx;
+  color: #828282;
+}
+/* 姓名 & 手机号 input样式*/
+.feedback-input-view {
+  background: #fff;
+  display: flex;
+  overflow: hidden;
+  border: 3rpx solid #e4e4e4;
+  border-radius: 11rpx;
+  line-height: 93rpx;
+  padding-left: 40rpx;
+   margin-top: 30rpx; 
+}
+.feedback-input {
+  height: 93rpx;
+  padding-left: 30rpx;
+}
+
+/* 按钮：提交建议 */
+.submit-suggest {
+  background-color: #54bf6c;
+  color: #fff;
+  font-size: 37rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* --end-- */

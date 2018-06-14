@@ -1,0 +1,38 @@
+/* pages/user/money/wallet_detail/wallet_detail.wxss */
+/* 钱包明细 */
+
+/* --start-- */
+.money-detail-item {
+  border-bottom: 5rpx solid #f0f0f0;
+  padding: 30rpx 50rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.money-count-view {
+  position: fixed;
+  right: 0;
+  margin-right:50rpx; 
+  margin-top: 20rpx;
+}
+.money-count-view text {
+  font-size: 42rpx;
+  font-weight:500; 
+}
+.deposit-money-count text {
+  color: #259b24;
+}
+.time-view {
+  padding-top: 20rpx;
+}
+.time-view text {
+  font-size: 32rpx;
+}
+.title-view {
+  font-size: 37rpx;
+  font-weight: 600;
+}
+.time-text {
+  margin-left: 20rpx;
+}
+/* --end-- */

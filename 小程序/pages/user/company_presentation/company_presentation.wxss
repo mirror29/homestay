@@ -1,0 +1,30 @@
+/* pages/user/company_presentation/company_presentation.wxss */
+/* 公司简介 */
+
+/* --start-- */
+.company-logo-view {
+  text-align: center;
+  border-bottom: 5rpx solid #f0f0f0;
+}
+.company-logo-img {
+  width: 311rpx;
+  height:107rpx;
+  padding-top: 30rpx;
+  padding-bottom:30rpx;
+}
+/* 公司文字简介 */
+.company-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 32rpx;
+  margin-top: 30rpx;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}
+.company-content-text-1 {
+  color: #2DA8BD;
+}
+.company-content-text-2 {
+  margin-top: 30rpx;
+}
+/* --end-- */

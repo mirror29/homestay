@@ -1,0 +1,47 @@
+/* pages/user/money/money.wxss */
+/* 我的钱包——提现 */
+
+/* --start-- */
+.my-money {
+   text-align: center; 
+   display: flex;
+   flex-direction: column;
+}
+.my-money image{
+  width: 126rpx;
+  height: 110rpx;
+}
+/* 钱包明细 */
+.money-detail {
+  text-align: right;
+  padding: 30rpx 0rpx 50rpx 0rpx;
+  border-bottom: 5rpx solid #f0f0f0;
+  margin: 0rpx 50rpx;
+}
+.money-detail text {
+  font-size: 32rpx;
+  color: #666666;
+}
+/* 金额数量 */
+.moeny-count {
+  text-align: center;
+  padding: 50rpx 0rpx 50rpx 0rpx;
+  border-bottom: 5rpx solid #f0f0f0;
+  margin: 0rpx 50rpx;
+}
+.moeny-count view {
+  padding-top: 50rpx;
+}
+.moeny-count text{
+  font-size: 65rpx;
+  color: #ff9800;
+}
+/* 按钮：押金提现 */
+.my-money button{
+  width: 50%;
+  background-color: #54bf6c;
+  color: #fff;
+  font-size: 32rpx;
+  margin-top: 80rpx;
+}
+/* --end-- */

@@ -1,0 +1,14 @@
+<!--pages/user/company_presentation/company_presentation.wxml-->
+<!-- 公司简介 -->
+<view class='company-presentation'>
+<view class='company-presentation-body'>
+<view  class='company-logo-view'>
+  <image  class='company-logo-img' src='/images/logo.png'></image>
+</view>
+  <view class='company-content'>
+    <text class='company-content-text-1'>顽家</text>
+    <text class='company-content-text-2'>顽家服务于所有闲置不动产，升级现有住宿品质，打造全新高品质的旅游出行、日常聚会等国内具有开创性的品质提升服务平台 ，我们希望让用户用原来的订房价格体验到更高的品质住宿。 我们做了什么？ 我们让闲置物业有效利用，让得到更好住宿体验，让所有人都有机会成为0风险房东，解决每个城市租赁上税问题。公司布局以贵阳为总部，5年内布局15个以上省直属分公司团队。
+    </text>
+  </view>
+</view>
+</view>

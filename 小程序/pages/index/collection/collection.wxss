@@ -1,0 +1,61 @@
+/* pages/index/collection/collection.wxss */
+.collection-con{
+  background-color: #f0f0f0;
+  padding: 10rpx 15rpx;
+  margin-top: 20rpx;
+}
+
+.recommend-img image{
+  width: 100%;
+  border-radius: 5px;
+  height: 340rpx;
+}
+
+.recommend-city-li{
+  margin-top: 20rpx;
+}
+
+.recommend-city-li-foot{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30rpx 20rpx 20rpx 20rpx;
+  margin-top: -20rpx;
+  box-shadow: 1px 2px 0px 0px rgba(223, 223, 223, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.recommend-city-li-foot1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommend-city-li-foot1 image{
+  height: 44rpx;
+  width: 44rpx;
+}
+
+.recommend-city-li-foot2{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.recommend-city-li-foot2 image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 30rpx;
+}
+
+.recommend-left{
+  display: flex;
+}
+
+.recommend-left text{
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+
+.recommend-right text{
+  color: #FF9800;
+  font-size: 44rpx;
+}

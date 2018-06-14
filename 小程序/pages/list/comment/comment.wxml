@@ -1,0 +1,36 @@
+<!--pages/comment/comment.wxml-->
+<view class='pending-payment'>
+    <image src="/images/banner2.png" class='picture-1' bindtap='showDetails'></image>
+    <view class='High-line'>
+        <view class='High-line-6'>
+            <text>花果园半山小镇</text>
+        </view>
+        <view class='payment-2'>
+            <text>2018年6月1日-2018年6月3日</text>
+        </view>
+        <view class='payment-3'>
+            <text class='payment-2'>（共2晚）</text>
+            <text class='payment-5'>￥1158</text>
+        </view>
+    </view>
+    <view class='High-line-1'>
+    </view>
+</view>
+<view class='input-box'>
+    <textarea type='text' name='' placeholder='请输入您想评论的内容...' class='input-box-1'></textarea>
+</view>
+<view class='Upload-text'>
+    <text>上传图片</text>
+</view>
+<view class='picture'>
+    <view class='upload'  bindtap="choose">
+        <image src='/images/jiahao.png' class='upload-1'></image>
+    </view>
+    <view bindtap='uploadimg'  wx:for="{{pics}}">
+        <image src='{{item}}' class='picture-2'></image>
+    </view>
+  
+</view>
+<view class='bottom-1' bindtap='backList'>
+    <text class='bottom-1-1'>确认评价</text>
+</view>

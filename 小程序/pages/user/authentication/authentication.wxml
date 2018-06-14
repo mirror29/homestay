@@ -1,0 +1,42 @@
+<!--pages/user/authentication/authentication.wxml-->
+<!-- 实名认证 -->
+
+<view class='user-authentication'>
+<!-- 上传身份证照片 -->
+<view class='identity-card-view'>
+<!-- 拍摄身份证正面 照片面-->
+  <view class='identity-card-photo-body'>
+  <view class='photo-container-view'>
+    <view class='photo-container'>
+      <image class='xiangji-icon' src='/images/xiangji.png'></image>
+    </view>
+  </view>
+  <view class='identity-card-text'>
+    <text class='explain-text-0'>请拍摄身份证正面</text>
+    <text class='explain-text-1'>照片面</text>
+  </view>
+<!-- 拍摄身份证反面 国徽面-->
+  <view class='photo-container-view'>
+    <view class='photo-container'>
+      <image class='xiangji-icon' src='/images/xiangji.png'></image>
+    </view>
+  </view>
+  <view class='identity-card-text'>
+    <text class='explain-text-0'>请拍摄身份证反面</text>
+    <text class='explain-text-1'>国徽面</text>
+   </view>
+  </view>
+<!-- 拍摄说明 -->
+  <view class='take-photo-text-view'>
+    <text class='take-photo-text0'>
+    拍摄时请确保身份证边框完整,字迹清晰，亮度均衡
+    </text>
+  <view class='take-photo-text1-view'>
+    <text class='take-photo-text1'>（仅用于公安审核）</text>
+  </view>
+  </view>
+</view>
+<!-- 按钮: 下一步，刷个脸吧 -->
+  <button class='face-btn' bindtap='showFaceDetection'>下一步，刷个脸吧</button>
+</view>
+

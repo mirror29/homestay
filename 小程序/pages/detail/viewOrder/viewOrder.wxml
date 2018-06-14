@@ -1,0 +1,59 @@
+<!--pages/detail/viewOrder/viewOrder.wxml-->
+<view class='order-head'>
+    <view class='order-head-left'>
+        <image src='/images/banner2.png' bindtap='showDetails'></image>
+        <view>
+            <text>花果园半山小镇</text>
+            <view class='order-head-left-text'>
+                <text class='order-head-left-text1'>¥ 329 </text>
+                <text> 天/晚</text>
+            </view>
+        </view>
+    </view>
+    <view class='order-head-right'>
+        <image src='/images/dianao.png'></image>
+        <text>共2晚</text>
+    </view>
+</view>
+
+<!-- 订单列表 -->
+<view class='order-con'>
+    <view class='order-li'>
+        <text>订单状态</text>
+        <text>待入住</text>
+    </view>
+    <view class='order-li'>
+        <text>入住时间</text>
+        <text>6月1日</text>
+    </view>
+    <view class='order-li'>
+        <text>离店时间</text>
+        <text>6月3日</text>
+    </view>
+    <view class='order-li'>
+        <text>入住人数</text>
+        <text>3人</text>
+    </view>
+    <view class='order-li'>
+        <text>联系人姓名</text>
+        <text>李先生</text>
+    </view>
+    <view class='order-li'>
+        <text>联系人姓名</text>
+        <text>138 8888 8888</text>
+    </view>
+    <view class='order-li'>
+        <text>订单总价（含押金）</text>
+        <text>1158 元</text>
+    </view>
+    <view class='order-li'>
+        <text>订单编号</text>
+        <text>16584368456115584</text>
+    </view>
+    <view class='order-li'>
+        <text>地址</text>
+        <text>花果园X区1栋1单元...</text>
+    </view>
+    <map id="map" longitude="113.32452" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+
+</view>

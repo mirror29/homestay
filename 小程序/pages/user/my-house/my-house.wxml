@@ -1,0 +1,56 @@
+<!--pages/my-house/my-house.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item class="banner">
+      <image src="{{item}}" class="slide-image" mode="widthFix"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='big-word'>
+    <text>花果园半山小镇1栋1单元</text>
+</view>
+<view class='profit-2'>
+     <view class='location-1'>
+         <image src='/images/dingwei.png/' class='location'></image>
+     </view>
+     <view class='city-1'>
+         <text class='city'>贵阳市</text>
+     </view>
+     <view class='profit-1'>
+         <text class='profit'>累积收益</text>
+     </view>
+     <view class='money-1'>
+         <text class='money'>￥1158</text>
+     </view>
+</view>
+<view>
+    <!-- 日历 -->
+<view class='detail-data'>
+    <view class="flex box box-tb box-align-center">
+        <view class="calendar pink-color box box-tb">
+              <view class="top-handle fs28 box box-lr box-align-center box-pack-center">
+                  <view class="prev box box-rl" bindtap="handleCalendar" data-handle="prev">
+                      <view class="prev-handle box box-lr box-align-center box-pack-center">《 </view>
+                  </view>
+                  <view bindtap="chooseYearAndMonth" class="date-area box box-lr box-align-center box-pack-center">{{curYear || "--"}} 年 {{curMonth || "--"}} 月</view>
+                  <view class="next box box-lr" bindtap="handleCalendar" data-handle="next">
+                      <view class="next-handle box box-lr box-align-center box-pack-center">》</view>
+                  </view>
+              </view>
+              <view class="weeks box box-lr box-pack-center box-align-center">
+                  <view class="flex week fs28" wx:for="{{weeksCh}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+              </view>
+              <view class="days box box-lr box-wrap">
+                  <view wx:if="{{hasEmptyGrid}}" class="grid white-color box box-align-center box-pack-center" wx:for="{{empytGrids}}" wx:key="{{index}}" data-idx="{{index}}">
+                  </view>
+                  <view class="grid white-color box box-align-center box-pack-center" wx:for="{{days}}" wx:key="{{index}}" data-idx="{{index}}" bindtap="tapDayItem">
+                      <view class='text-top'>入住中</view>
+                      <view class=" day {{item.choosed ? 'border-radius pink-bg' : ''}} box box-align-center box-pack-center">{{item.day}}
+                      </view>
+                  </view>
+              </view>
+          </view>
+      </view>
+</view>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/user/landlord_entrance/landlord_entrance.wxml-->
+<!-- 房东入口：请先进行实名认证 -->
+
+<view class='name-detection-view'>
+  <image class='name-detection-img' src='/images/gantan.png'></image>
+  <view class='name-detection-tex-view'>
+    <text class='name-detection-text'>请先进行实名认证</text>
+  </view>
+</view>

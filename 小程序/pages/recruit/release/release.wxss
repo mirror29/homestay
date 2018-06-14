@@ -1,0 +1,183 @@
+/* pages/release/release.wxss */
+.background{
+  width: 100%;
+  height: 100%;
+  background: #F0F0F0;
+  position: fixed;
+  z-index: -999;
+}
+
+.frame{
+  padding-top:80rpx;
+}
+
+.picker{
+  padding: 20rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5rpx solid #f0f0f0;
+  font-size: 32rpx;
+  background: #fff;
+}
+
+.other-btn{
+  display: flex;
+  justify-content: space-between;
+  margin: 0rpx 20rpx;
+  margin-bottom: 15rpx;
+}
+.chose-txt{  
+  border-radius: 6px;  
+  font-size: 26rpx;  
+  width:  27.5%;  
+  margin: 0rpx 10px; 
+  float: left;
+  padding: 10rpx 40rpx; 
+  border: 1rpx dashed #ccc;
+}  
+.chose-p{  
+  line-height: 18px; 
+  width: 100%;  
+  text-align:  center; 
+  float: left;  
+}
+
+.detailed-window{
+  background: #fff;
+  padding-top: 20rpx;
+}
+
+.detailed{
+  font-size: 32rpx;
+  padding-left: 30rpx;
+}
+
+.input-box {
+  font-size: 28rpx;
+  padding: 20rpx;
+  border: 1rpx solid #f0f0f0;
+  margin:20rpx 30rpx;
+  width: 645rpx;
+  height: 200rpx;
+}
+
+.situation{
+  font-size: 32rpx;
+  padding-left: 30rpx;
+  padding-top: 5rpx;
+}
+
+.option{
+  display: flex;
+  justify-content:space-around;
+}
+
+.full-name5{
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content:space-around;
+  padding-top:20rpx;
+  border-top: 7rpx solid #F0F0F0;
+}
+
+.input-box-1-4{
+  font-size: 28rpx;
+  background: #fff;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  height: 50rpx;
+  width: 280rpx;
+  margin-right: 150rpx;
+}
+
+.full-name-1-4{
+  font-size: 32rpx;
+  padding-top:15rpx;
+  padding-bottom: 35rpx;
+  padding-left: 35rpx;
+}
+
+.input-box5{
+  padding-left: 50rpx;
+}
+
+.square{
+  font-size: 28rpx;
+  margin-right: 50rpx;
+  padding-top: 10rpx; 
+}
+
+.full-name4{
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content:space-around;
+  padding-top:20rpx;
+  border-top: 7rpx solid #F0F0F0;
+}
+
+.input-box-1-3{
+  font-size: 28rpx;
+  background: #fff;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  height: 50rpx;
+  width: 280rpx;
+  margin-right: 235rpx;
+}
+
+.full-name-1-3{
+  font-size: 32rpx;
+  padding-top:15rpx;
+  padding-bottom: 35rpx;
+  padding-left: 35rpx;
+}
+
+.input-box4{
+  padding-left: 80rpx;
+}
+
+.full-name3{
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content:space-around;
+  padding-top:20rpx;
+  border-top: 7rpx solid #F0F0F0;
+}
+
+.input-box-1-2{
+  font-size: 28rpx;
+  background: #fff;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  height: 50rpx;
+  width: 280rpx;
+  margin-right: 235rpx;
+}
+
+.full-name-1-2{
+  font-size: 32rpx;
+  padding-top:15rpx;
+  padding-bottom: 35rpx;
+  padding-left: 35rpx;
+}
+
+.input-box3{
+  padding-left: 50rpx;
+}
+
+.next-step{
+  position:absolute;
+  bottom: 0rpx;
+
+}
+
+.next-step-1{
+  background: #54BF6C;
+  color: #fff;
+  font-size: 36rpx;
+  border-radius: 0rpx;
+  width: 750rpx;
+}

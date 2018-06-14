@@ -1,0 +1,207 @@
+<!--pages/detail/detail.wxml-->
+<!-- 房源详情 -->
+
+<!-- banner -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item class="banner">
+      <image src="{{item}}" class="slide-image" mode="widthFix"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<!-- 详情头部 -->
+<view class='detail-head'>
+    <view class='detail-head-left'>
+        <text>花果园半山小镇1栋1单元</text>
+        <text class='detail-head-left-text'>【内置5台 电竞电脑】</text>
+        <view>
+            <text class='detail-head-left-text'>推荐8人以内</text>
+            <text class='detail-head-left-text '>距我2.5公里</text>
+        </view>
+    </view>
+    <view class='detail-head-right'>
+        <view class='detail-head-right-1'>
+            <text>¥ 329</text>
+            <image src='/images/shoucang-2.png'></image>
+        </view>
+        <text class='detail-head-right-text'>元 / 晚</text>
+        <view class='detail-head-right-2'>
+            <image src='/images/dingwei.png'></image>
+            <text>查看地图</text>
+        </view>
+    </view>
+</view>
+
+<!-- 房屋布局 -->
+<view class='detail-layout'>
+    <view class='detail-layout-img'>
+        <image src='/images/detail-1.png'></image>
+    </view>
+    <view class='detail-layout-text'>
+        <text>配置</text>
+        <text>显示器：</text>
+        <text>主板：</text>
+        <text>显卡：</text>
+        <text>CPU：</text>
+        <text>内存：</text>
+    </view>
+</view>
+
+<!-- 配套设施 -->
+<view class='detail-facilities'>
+    <text class='detail-facilities-text'>配套设施</text>
+    <view class='detail-facilities-con'>
+        <view>
+            <image src='/images/computer.png'></image>
+            <text>电脑</text>
+        </view>
+        <view>
+            <image src='/images/computer.png'></image>
+            <text>电脑x5</text>
+        </view>
+        <view>
+            <image src='/images/computer.png'></image>
+            <text>电脑x5</text>
+        </view>
+        <view>
+            <image src='/images/computer.png'></image>
+            <text>电脑x5</text>
+        </view>
+        <view>
+            <image src='/images/computer.png'></image>
+            <text>电脑x5</text>
+        </view>
+        <view>
+            <image src='/images/computer.png'></image>
+            <text>电脑x5</text>
+        </view>
+    </view>
+</view>
+
+<!-- 日历 -->
+<view class='detail-data'>
+    <view class="flex box box-tb box-align-center">
+        <view class="calendar pink-color box box-tb">
+              <view class="top-handle fs28 box box-lr box-align-center box-pack-center">
+                  <view class="prev box box-rl" bindtap="handleCalendar" data-handle="prev">
+                      <view class="prev-handle box box-lr box-align-center box-pack-center">《 </view>
+                  </view>
+                  <view bindtap="chooseYearAndMonth" class="date-area box box-lr box-align-center box-pack-center">{{curYear || "--"}} 年 {{curMonth || "--"}} 月</view>
+                  <view class="next box box-lr" bindtap="handleCalendar" data-handle="next">
+                      <view class="next-handle box box-lr box-align-center box-pack-center">》</view>
+                  </view>
+              </view>
+              <view class="weeks box box-lr box-pack-center box-align-center">
+                  <view class="flex week fs28" wx:for="{{weeksCh}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+              </view>
+              <view class="days box box-lr box-wrap">
+                  <view wx:if="{{hasEmptyGrid}}" class="grid white-color box box-align-center box-pack-center" wx:for="{{empytGrids}}" wx:key="{{index}}" data-idx="{{index}}">
+                  </view>
+                  <view class="grid white-color box box-align-center box-pack-center" wx:for="{{days}}" wx:key="{{index}}" data-idx="{{index}}" bindtap="tapDayItem">
+                      <view class='text-top'>入住</view>
+                      <view class=" day {{item.choosed ? 'border-radius pink-bg' : ''}} box box-align-center box-pack-center">{{item.day}}
+                      </view>
+                      <view class='text-foot'>¥ 329</view>
+                  </view>
+              </view>
+          </view>
+      </view>
+</view>
+
+<!-- 房源描述 -->
+<view class='detail-describe'>
+    <text class='detail-describe-tit'>房源描述</text>
+    <text class='detail-describe-con'>1：人文环境一流，隶属于中高档次社区。此房南北朝向，格局相当漂亮，双卧和客厅是分离开的，客厅有独立的2个面，特别好摆家具和电器。户型，位置独  特，视野开阔，空气清新，紧对花园，特别适合居家过日子。清晨时，您站在客厅里，沐浴着旭日的光辉，精神饱和舒畅！本房价位超值，唯一一套抄底房
+
+2：这套房子是南北方向的，户型超好，朝向南北，每个房间都很大，客厅空间很大，特别敞亮，采光相当好，从太阳升起来到落下一直都有采光；空间设计合理，小区管理制度完善，高层临江风水好。您的贴身置业顾问竭诚为您服务。花园式社区，有山有水有游乐场，健身区更是您不可不选的好去处。</text>
+</view>
+
+<!-- 房源规则 -->
+<view class='detail-rule'>
+    <view class='detail-rule-li'>
+        <text>接待时间</text>
+        <text>00：00~23：59</text>
+    </view>
+    <view class='detail-rule-li'>
+        <text>入住时间</text>
+        <text>12点以后</text>
+    </view>
+    <view class='detail-rule-li'>
+        <text>退房时间</text>
+        <text>14点以前</text>
+    </view>
+    <view class='detail-rule-li'>
+        <text>入住押金</text>
+        <text>500元</text>
+    </view>
+    <view class='detail-rule-li'>
+        <text>退订规则</text>
+        <text>不可退订</text>
+    </view>
+</view>
+
+<!-- 评论 -->
+<view class='detail-comment'>
+    <view class='detail-comment-li'>
+        <view class='detail-comment-tit'>
+            <view class='detail-comment-tit-left'>
+                <image src='/images/124134975.jpg'></image>
+                <text>电竞选手</text>
+            </view>
+            <view class='detail-comment-tit-right'>
+                <text>2018-05-31</text>
+            </view>
+        </view>
+        <view class='detail-comment-con'>
+            <view class='detail-comment-text'>
+                <text>作为一位顾客，我用亲身经历发自内心的觉得，环境整洁，房间布局堪称完美，优雅又不失情调，服务周到，让人无比舒心。给我营造了一种家的感觉，无论大处到小处都是那么无懈可击，价格也很合理。</text>
+            </view>
+            <view class='detail-comment-img'>
+                <image src='/images/banner2.png'></image>
+                <image src='/images/banner2.png'></image>
+                <image src='/images/banner2.png'></image>
+                <image src='/images/banner2.png'></image>
+                <image src='/images/banner2.png'></image>             
+            </view>
+        </view>
+    </view>
+
+    <view class='detail-comment-li'>
+        <view class='detail-comment-tit'>
+            <view class='detail-comment-tit-left'>
+                <image src='/images/124134975.jpg'></image>
+                <text>电竞选手</text>
+            </view>
+            <view class='detail-comment-tit-right'>
+                <text>2018-05-31</text>
+            </view>
+        </view>
+        <view class='detail-comment-con'>
+            <view class='detail-comment-text'>
+                <text>作为一位顾客，我用亲身经历发自内心的觉得，环境整洁，房间布局堪称完美，优雅又不失情调，服务周到，让人无比舒心。给我营造了一种家的感觉，无论大处到小处都是那么无懈可击，价格也很合理。</text>
+            </view>
+            <view class='detail-comment-img'>
+                <image src='/images/banner2.png'></image>
+                <image src='/images/banner2.png'></image>
+                <image src='/images/banner2.png'></image>
+                <image src='/images/banner2.png'></image>
+                <image src='/images/banner2.png'></image>             
+            </view>
+        </view>
+    </view>
+
+    <button class='detail-comment-btn' bindtap='showCommentList'>查看更多</button>
+</view>
+
+<!-- 底部按钮 -->
+<view class='detail-foot'>
+    <view class='detail-foot-left' bindtap='showService'>
+        <text class='iconfont icon-service'></text>
+        <text>联系客服</text>
+    </view>
+    <view class='detail-foot-right' bindtap='showReserve'>
+        <text>立即预定</text> 
+    </view>
+</view>

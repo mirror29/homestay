@@ -1,0 +1,37 @@
+<!--pages/user/information/information.wxml-->
+<!-- 个人资料 -->
+
+<view class='user-information'>
+  <view class='user-information-body'>
+  <!-- 头像 -->
+    <view class='user-head flex-view'>
+    <text>头<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>像：</text>
+    <image class='user-head-img userinfo-avatar'  src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
+    <!-- 昵称 -->
+    <view class='flex-view user-nickname'>
+    <text>昵<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>称：</text>
+    <text class="userinfo-nickname user-nickname-text">{{userInfo.nickName}}</text>
+    </view>
+    <!-- 性别 -->
+    <view class='flex-view user-gender'>
+    <text>性<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>别：</text>
+    <input class='input-content input-content-fender' placeholder='男' type='text'></input>
+    </view>
+    <!-- 姓名 -->
+    <view class='flex-view user-real-name'>
+    <text>姓<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>名：</text>
+    <input class='input-content' placeholder='请输入' type='text'></input>
+    </view>
+
+    <!-- 手机号 -->
+    <view class='flex-view user-phone-number'>
+    <text>电<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>话：</text>
+    <input class='input-content' placeholder='请输入' type='number'></input>
+    </view>
+
+    <view class='information-btn' bindtap='backUser'>
+        <text>保存</text>
+    </view>
+  </view>
+</view>

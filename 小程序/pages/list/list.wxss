@@ -1,0 +1,158 @@
+/* pages/list/list.wxss */
+.swiper-tab{  
+    width: 100%;  
+    text-align: center;  
+    line-height: 80rpx;  
+}  
+.swiper-tab-list{ 
+    font-size: 32rpx;  
+    display: inline-block;  
+    width: 20%;  
+    color: #777777;  
+}  
+.on{ 
+    color: #FF9800;  
+    border-bottom: 5rpx solid #FF9800;}  
+  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; } 
+
+/* 选项卡 */
+
+.order-1{
+  background: #0c0;
+  height: 60rpx;
+  text-align:center;
+  color: #fff;
+  font-size: 36rpx;
+  padding-top: 20rpx;
+}
+
+.tab-item{
+  font-size: 28rpx;
+  width: 20%;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12rpx;
+}
+  
+
+.tab-item.active{
+  color: #FF9800;
+  border-bottom: 2px solid #FF9800;
+  }
+
+.tab-item.active:after{
+  content: "";
+  display: block;
+  height: 4rpx;
+  width: 110rpx;
+  background: #474646;
+  position: absolute; 
+  bottom: 0;
+  left: 5rpx;
+  border-radius: 16rpx;
+  }
+
+.pending-payment{
+  font-size: 30rpx;
+  margin:20rpx;
+  display: flex;
+  justify-content:space-around;
+  border-top: 0rpx;
+  border-radius: 10rpx;
+  height: 180rpx;
+  padding-top: 15rpx;
+  background: #fff;
+  left: 9px;
+  box-shadow: 1px 2px 0px 0px rgba(218, 218, 218, 1);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.picture-1{
+  width: 180rpx;
+  height: 168rpx;
+  border-radius: 10rpx;
+}
+
+.picture-2{
+  width: 40rpx;
+  height: 40rpx;
+  padding-left: 80rpx;
+  padding-bottom: 28rpx;
+}
+
+.High-line-6{
+  font-size: 32rpx;
+}
+
+.payment-2{
+  color: #ccc;
+  font-size: 24rpx;
+}
+
+.payment-3{
+  display: flex;
+  justify-content:space-around;
+}
+
+.payment-5{
+  color: rgba(255,152,0,1);
+  padding-left: 5rpx;
+  font-size: 40rpx;
+}
+
+.High-line{
+  line-height:2em;
+}
+
+.High-line-1{
+  display: flex;
+  flex-direction:column;
+  line-height:3.5em;
+}
+
+.button-1{
+  color: #41ADBD;
+  font-size: 24rpx;
+  border: 1px solid #41ADBD; 
+  background: #fff; 
+}
+
+.utton-1{
+  margin-bottom: 0rpx;
+}
+
+.quantu{
+  background: #F0F0F0;
+}
+
+.scrollbar-0{
+  background: #FFF;
+  padding-top: 30rpx;
+}
+
+.High-line-7{
+  padding-top: 106rpx;
+}
+
+.button-3{
+  color: #30C02F;
+  font-size: 24rpx;
+  border: 1px solid #30C02F; 
+  background: #fff;
+}
+
+.button-4{
+  color: #E24E54;
+  font-size: 24rpx;
+  border: 1px solid #E24E54;
+  background: #fff;
+}
+
+.button-5{
+  color: #666666;
+  font-size: 24rpx;
+  border: 1px solid #666666; 
+  background: #fff;
+}

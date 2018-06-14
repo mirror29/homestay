@@ -1,0 +1,116 @@
+/* pages/recruit/recruit.wxss */
+.background{
+  width: 100%;
+  height: 100%;
+  background: #F0F0F0;
+  position: fixed;
+  z-index: -999;
+}
+
+.full-name{
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content:space-around;
+  padding-top:20rpx;
+  border-bottom: 7rpx solid #F0F0F0;
+}
+
+.full-name-1{
+  font-size: 32rpx;
+  padding-top:15rpx;
+  padding-bottom: 35rpx;
+  padding-left: 20rpx;
+}
+
+.input-box-1{
+  font-size: 28rpx;
+  background: #fff;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  height: 50rpx;
+  width: 280rpx;
+  margin-right: 216rpx;
+}
+
+.full-name2{
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content:space-around;
+  padding-top:20rpx;
+  border-bottom: 7rpx solid #F0F0F0;
+}
+
+.full-name-1-1{
+  font-size: 32rpx;
+  padding-top:15rpx;
+  padding-bottom: 35rpx;
+  padding-left: 30rpx;
+}
+
+.input-box-1-1{
+  font-size: 28rpx;
+  background: #fff;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  height: 50rpx;
+  width: 280rpx;
+  margin-right: 6rpx;
+}
+
+.house0{
+  margin-bottom:15rpx;
+  margin-right: 5rxp; 
+}
+
+.house{
+  font-size: 28rpx;
+  background: #54BF6C;
+  color: #fff;
+  margin: 0rpx;
+  padding-top: 5rpx;
+}
+
+.full-name3{
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content:space-around;
+  padding-top:20rpx;
+  border-bottom: 7rpx solid #F0F0F0;
+}
+
+.input-box-1-2{
+  font-size: 28rpx;
+  background: #fff;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  height: 50rpx;
+  width: 280rpx;
+  margin-right: 235rpx;
+}
+
+.full-name-1-2{
+  font-size: 32rpx;
+  padding-top:15rpx;
+  padding-bottom: 35rpx;
+  padding-left: 35rpx;
+}
+
+.frame{
+  padding-top:80rpx;
+}
+
+.next-step{
+  position:absolute;
+  bottom: 0rpx;
+}
+
+.next-step-1{
+  background: #54BF6C;
+  color: #fff;
+  font-size: 36rpx;
+  border-radius: 0rpx;
+  width: 750rpx;
+}

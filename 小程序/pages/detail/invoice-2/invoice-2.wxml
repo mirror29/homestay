@@ -1,0 +1,17 @@
+<!--pages/invoice/invoice.wxml-->
+<view class='whole-page'>
+    <view class='picture'>
+        <image src='/images/success.png' class='complete'></image>
+    </view>
+    <view class='writte-words'>
+        <text>发票填写完成</text>
+        <view class='date1'>
+            <text class='date'>将在1~2个工作日内为您寄出</text>
+        </view>
+    </view>
+    <view class='button-1'>
+        <button class='next-step-1' bindtap='backList'>查看订单</button>
+        <button class='next-step-1' bindtap='backIndex'>返回首页</button>
+    </view>
+</view>
+

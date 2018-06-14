@@ -1,0 +1,95 @@
+<!--pages/index/house/house.wxml-->
+<!-- 房源列表 -->
+<view class='house-city'>
+    <view class='city-left'>
+        <image src='/images/dingwei.png'></image>
+        <text wx:for="{{currentCity}}" wx:key='{{index}}'>{{item}}</text>
+    </view>
+    <view class='city-right'>
+        <text bindtap='showSearch'>切换城市</text>
+    </view>
+</view>
+
+<!-- 排序等 -->
+<view class='house-head'>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='head-1'>
+         <text class="picker">排序</text>
+    </picker>
+    <picker bindchange="bindPickerChange2" value="{{index}}" range="{{array2}}" class='head-2'>
+         <text class="picker2">分类</text>
+    </picker>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <text>区域筛选</text>
+    </picker>
+</view>
+
+<!-- 房源列表 -->
+<view class='house-con'>
+    <view class='recommend-city-li'>
+        <view class='recommend-img'>
+            <image src='/images/banner2.png'></image>
+        </view>
+        
+        <view class='recommend-city-li-foot'>
+            <view class='recommend-city-li-foot1'>
+                <text>花果园半山小镇</text>
+                <image src="/images/shoucang-2.png"></image>
+            </view>
+            <view class='recommend-city-li-foot2'>
+                <view class='recommend-left'>
+                    <image src='/images/dianao.png'></image>
+                    <text>距我2.5公里</text>
+                </view>
+                <view class='recommend-right'>
+                    <text>¥ 329</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class='recommend-city-li'>
+        <view class='recommend-img'>
+            <image src='/images/banner2.png'></image>
+        </view>
+        
+        <view class='recommend-city-li-foot'>
+            <view class='recommend-city-li-foot1'>
+                <text>花果园半山小镇</text>
+                <image src="/images/shoucang-2.png"></image>
+            </view>
+            <view class='recommend-city-li-foot2'>
+                <view class='recommend-left'>
+                    <image src='/images/KTV.png'></image>
+                    <text>距我2.5公里</text>
+                </view>
+                <view class='recommend-right'>
+                    <text>¥ 329</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class='recommend-city-li'>
+        <view class='recommend-img'>
+            <image src='/images/banner2.png'></image>
+        </view>
+        
+        <view class='recommend-city-li-foot'>
+            <view class='recommend-city-li-foot1'>
+                <text>花果园半山小镇</text>
+                <image src="/images/shoucang-2.png"></image>
+            </view>
+            <view class='recommend-city-li-foot2'>
+                <view class='recommend-left'>
+                    <image src='/images/zhuoyou.png'></image>
+                    <text>距我2.5公里</text>
+                </view>
+                <view class='recommend-right'>
+                    <text>¥ 329</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+

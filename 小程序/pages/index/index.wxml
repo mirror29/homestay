@@ -1,0 +1,98 @@
+<!--index.wxml-->
+<!-- 首页 -->
+<view class='search'>
+     <view bindtap='showSearch'>
+         <text class="iconfont icon-sousuo"></text>
+         <text class='search-text-1'>请搜索您的目的地</text>
+     </view>
+</view>
+
+<!-- banner -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key='{{index}}'>
+    <swiper-item class="banner">
+      <image src="{{item}}" class="slide-image" mode="widthFix"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 分类栏 -->
+<view class='classify'>
+    <view bindtap='showHouse'>
+        <image src='/images/fujin.png'></image>
+        <text>附近房源</text>
+    </view>
+    <view bindtap='showQuick'>
+        <image src='/images/search.png'></image>
+        <text>快捷找房</text>
+    </view>
+    <view bindtap='showRecruit'>
+        <image src='/images/zhaomupng.png'></image>
+        <text>房东招募</text>
+    </view>
+    <view bindtap='showCollection'>
+        <image src='/images/shoucang-ac.png'></image>
+        <text>我的收藏</text>
+    </view>
+</view>
+
+<!-- 推荐城市 -->
+<view class='recommend-city'>
+    <view class='recommend-tit'>
+        <text class='recommend-text1'>推荐城市</text>
+        <text class='recommend-text2'>大家都爱去这些地方~~~</text>
+    </view>
+    <view class='recommend-con'>
+        <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+          <view class="scroll-view-item_H" bindtap='showHouse'>
+              <image src='/images/timg-1.jpg'></image>
+          </view>
+          <view class="scroll-view-item_H " bindtap='showHouse'>
+              <image src='/images/timg-1.jpg'></image>
+          </view>
+          <view class="scroll-view-item_H " bindtap='showHouse'>
+              <image src='/images/timg-1.jpg'></image>
+          </view>
+          <view class="scroll-view-item_H " bindtap='showHouse'>
+              <image src='/images/timg-1.jpg'></image>
+          </view>
+        </scroll-view>
+    </view>
+</view>
+
+<!-- 推荐房源 -->
+<view class='recommend-house'>
+    <view class='recommend-tit'>
+        <text class='recommend-text1'>推荐房源</text>
+        <text class='recommend-text2'>最优质的房源都在这里~~</text>
+    </view>
+    <view class='recommend-city-con'>
+
+        <view class='recommend-city-li' wx:for='{{houseList}}' wx:key='{{index}}'>
+            <view class='recommend-img'  bindtap='showDetail'>
+                <image src='{{item.topImg}}'></image>
+            </view>
+            
+            <view class='recommend-city-li-foot'>
+                <view class='recommend-city-li-foot1'>
+                    <text>{{item.name}}</text>
+                    <image wx:if="{{colleceted}}" catchtap='onCollectionTap' src="{{item.collectImg2}}"></image>
+                    <image wx:else catchtap='onCollectionTap' src="{{item.collectImg}}"></image>
+                </view>
+                <view class='recommend-city-li-foot2'>
+                    <view class='recommend-left'>
+                        <image src='{{item.classifyImg}}'></image>
+                        <text>{{item.distance}}</text>
+                    </view>
+                    <view class='recommend-right'>
+                        <text>{{item.price}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        
+        <button bindtap='showHouse' class='index-btn'>查看更多</button>
+    </view>
+</view>
+
+  

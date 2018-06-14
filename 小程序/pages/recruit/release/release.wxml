@@ -1,0 +1,46 @@
+<!--pages/release/release.wxml-->
+<view class='background'>
+</view>
+<view class='frame'>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+            <text>请选择城市</text>
+            <text>{{region[0]}} {{region[1]}} {{region[2]}} ></text>   
+        </view>
+    </picker>
+    <view class='detailed-window'>
+        <text class='detailed'>请输入详细地址</text>
+        <textarea type='text' name='' placeholder='包含街道信息及门牌号' class='input-box'></textarea>
+        <view class='option'>
+            <text class='situation'>装修情况</text>
+            <view class='other-btn'>
+                <block wx:for="{{array2}}">
+                    <view class="chose-txt" data-price="{{item.price}}"  data-id="{{index}}" bindtap="choseTxtColor" style="{{index == id?' right no-repeat; border:1rpx dashed #FF9800; color: #FF9800':'border:1rpx deshed #9C9895;color:gray'}}">  
+                        <text class="chose-p" >{{item}}</text>  
+                    </view>
+                </block>  
+            </view>
+        </view>  
+    </view> 
+    <view class='full-name5'>
+        <text class='full-name-1-4'>产权面积</text>
+        <view class='input-box5'>
+            <textarea type='text' name='' placeholder='请填写' class='input-box-1-4'></textarea>
+        </view>
+        <text class='square'>㎡</text> 
+    </view>
+    <view class='full-name4'>
+        <text class='full-name-1-3'>联系人</text>
+        <view class='input-box4'>
+            <textarea type='text' name='' placeholder='请填写' class='input-box-1-3'></textarea>
+        </view>
+    </view><view class='full-name3'>
+        <text class='full-name-1-2'>联系电话</text>
+        <view class='input-box3'>
+            <textarea type='text' name='' placeholder='请填写' class='input-box-1-2'></textarea>
+        </view>
+    </view>  
+</view>
+<view class='next-step'>
+    <button class='next-step-1' bindtap='showSubmission'>提交申请</button>
+</view>

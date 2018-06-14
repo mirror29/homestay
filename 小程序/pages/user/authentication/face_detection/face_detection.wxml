@@ -1,0 +1,28 @@
+<!--pages/user/authentication/face_detection/face_detection.wxml-->
+<!-- 人脸识别 -->
+
+<view class='face-detection-view'>
+  <view class='face-detection-body'>
+  <!-- 人脸框 -->
+    <view class='person-face'>
+      <image class='person-face-img' src='/images/touxiang.png'></image>
+    </view>
+    <!-- 拍摄说明 -->
+    <view class='take-photo-text-view'>
+      <text class='take-photo-text'>将拍摄您本人人脸，请确保正对手机，光线充足</text>
+    </view>
+    <!-- 身份信息 -->
+    <view class='take-photo-text-view'>
+      <text class='take-photo-text user-name'>张*</text>
+      <text class='take-photo-text identity-card-number'>522*************49</text>
+    </view>
+    <!-- 拍照图标 -->
+    <view class='start-detection-view'>
+      <view class='start-detection'>
+        <image class='start-detection-img' src='/images/xiangji.png'></image>
+      </view>
+    </view>
+  </view>
+  <!-- 按钮：完成认证 -->
+    <button class='success-detection' bindtap='backUser'>完成认证</button>
+</view>

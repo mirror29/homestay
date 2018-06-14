@@ -1,0 +1,72 @@
+/* pages/user/authentication/authentication.wxss */
+/* 页面：实名认证 */
+
+/* --start-- */
+
+/* 身份证视图 */
+.identity-card-view {
+  text-align: center;
+}
+.identity-card-photo-body {
+  text-align: center;
+}
+.photo-container-view {
+  text-align: center;
+  display: flex;  
+  flex-direction: row;  
+  justify-content: center; 
+}
+.photo-container {
+  width: 606rpx;
+  line-height: 367rpx;
+  margin-top: 50rpx;
+  border: 6rpx solid #41adbd;
+  border-style: dotted;
+  border-radius: 11rpx;
+}
+.xiangji-icon {
+  width: 103rpx;
+  height: 103rpx;
+  vertical-align: middle;
+}
+.identity-card-text {
+  padding-top: 40rpx;
+}
+.explain-text-0 {
+  font-size: 37rpx;
+}
+.explain-text-1 {
+  color: #41adbd;
+  font-size: 32rpx;
+  margin-left: 80rpx;
+}
+/* 拍摄说明 */
+.take-photo-text-view {
+  line-height: 30rpx;
+}
+.take-photo-text0 {
+  font-size: 30rpx;
+}
+.take-photo-text1-view {
+  padding-top: 30rpx;
+}
+.take-photo-text1 {
+  font-size: 30rpx;
+  padding-bottom: 110rpx;
+}
+
+/* 按钮：下一步，刷个脸吧 */
+.face-btn {
+  background: #54bf6c;
+  color: #fff;
+  border-radius: 0;
+  font-size: 37rpx;
+  border:none;
+  margin-top: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* --end-- */

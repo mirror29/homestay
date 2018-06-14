@@ -1,0 +1,78 @@
+<!--pages/detail/order/order.wxml-->
+
+<view class='order-head'>
+    <view class='order-head-left'>
+        <image src='/images/banner2.png' bindtap='showDetails'></image>
+        <view>
+            <text>花果园半山小镇</text>
+            <view class='order-head-left-text'>
+                <text class='order-head-left-text1'>¥ 329 </text>
+                <text> 天/晚</text>
+            </view>
+        </view>
+    </view>
+    <view class='order-head-right'>
+        <image src='/images/dianao.png'></image>
+        <text>共2晚</text>
+    </view>
+</view>
+
+<!-- 订单列表 -->
+<view class='order-con'>
+    <view class='order-li'>
+        <text>订单状态</text>
+        <text>待付款</text>
+    </view>
+
+    <picker mode="date" value="{{date}}" start="2018-06-01" end="2019-09-01" bindchange="bindDateChange">
+      <view class="picker order-li">
+        <text>入住时间</text>
+        <text>{{date}} ></text>
+      </view>
+    </picker>
+
+    <picker mode="date" value="{{date}}" start="2018-06-01" end="2019-09-01" bindchange="bindDateChange2">
+      <view class="picker order-li">
+        <text>离店时间</text>
+        <text>{{date2}} ></text>
+      </view>
+    </picker>
+
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker order-li">
+          <text>入住人数</text>
+          <text>{{array[index]}} ></text>
+      </view>
+    </picker>
+
+    <view class='order-li'>
+        <text>联系人姓名</text>
+        <input placeholder='请填写' placeholder-style='margin-left:280rpx;'></input>
+    </view>
+
+    <view class='order-li'>
+        <text>联系人电话</text>
+        <input placeholder='请填写' placeholder-style='margin-left:280rpx;'></input>
+    </view>
+
+    <view class='order-li'>
+        <text>需付房费</text>
+        <text>658 元</text>
+    </view>
+
+    <view class='order-li'>
+        <text>需付房费</text>
+        <text>500 元</text>
+    </view>
+</view>
+
+<!-- 底部按钮 -->
+<view class='order-foot'>
+    <view class='order-foot-left'>
+        <text class='order-foot-left-text1'>共计:</text>
+        <text class='order-foot-left-text2'>¥ 1158</text>
+    </view>
+    <view class='order-foot-right' bindtap='showReserve'>
+        <text>确认提交</text>
+    </view>
+</view>

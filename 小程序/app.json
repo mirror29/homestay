@@ -1,0 +1,67 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/user/user",
+    "pages/list/list",
+    "pages/index/house/house",
+    "pages/index/search/search",
+    "pages/index/quick/quick",
+    "pages/index/collection/collection",
+    "pages/detail/detail",
+    "pages/recruit/recruit",
+    "pages/detail/order/order",
+    "pages/detail/commentList/commentList",
+    "pages/detail/viewOrder/viewOrder",
+    "pages/detail/invoice/invoice",
+    "pages/detail/orderCompletion/orderCompletion",
+    "pages/user/information/information",
+    "pages/user/authentication/authentication",
+    "pages/user/authentication/face_detection/face_detection",
+    "pages/user/money/money",
+    "pages/user/money/wallet_detail/wallet_detail",
+    "pages/user/company_presentation/company_presentation",
+    "pages/user/feedback/feedback",
+    "pages/user/FAQ/FAQ",
+    "pages/user/landlord_entrance/landlord_entrance",
+    "pages/detail/invoice-2/invoice-2",
+    "pages/detail/reserve/reserve",
+    "pages/recruit/submission/submission",
+    "pages/recruit/release/release",
+    "pages/user/my-house/my-house",
+    "pages/recruit/landlord_entrance/landlord_entrance",
+    "pages/list/comment/comment",
+    "pages/detail/pay/pay"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#54BF6C",
+    "navigationBarTitleText": "顽家",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#54BF6C",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/home-ac.png",
+        "iconPath": "images/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/list-ac.png",
+        "iconPath": "images/list.png",
+        "pagePath": "pages/list/list",
+        "text": "订单"
+      },
+      {
+        "selectedIconPath": "images/user-ac.png",
+        "iconPath": "images/user.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  }
+}
+

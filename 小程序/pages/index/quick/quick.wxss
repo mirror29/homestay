@@ -1,0 +1,67 @@
+/* pages/index/quick/quick.wxss */
+.quick-con{
+  margin-top: 20rpx;
+  padding: 20rpx;
+}
+
+.picker{
+  padding: 20rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5rpx solid #f0f0f0;
+}
+
+.picker text{
+  font-size: 32rpx;
+  color: #363636;
+}
+
+.body-view{
+  padding: 20rpx 30rpx;
+  border-bottom: 5rpx solid #f0f0f0;
+}
+
+.body-view text{
+  font-size: 32rpx;
+  color: #363636;
+}
+
+.body-view slider{
+  padding: 15rpx 0;
+}
+
+.chose-txt{  
+  border-radius: 6px;  
+  font-size: 26rpx;  
+  width:  27.5%;  
+  margin: 5px; 
+  float: left;
+  padding: 10rpx;  
+}  
+.chose-p{  
+  line-height: 18px; 
+  width: 100%;  
+  text-align:  center; 
+  float: left;  
+}  
+
+.other{
+  padding: 20rpx 30rpx;
+}
+
+.other-text{
+  font-size: 34rpx;
+  color: #363636;
+}
+
+.other-btn{
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx auto;
+}
+
+.quick-con button{
+  width: 50%;
+  margin: 20rpx auto;
+  font-size: 34rpx;
+}

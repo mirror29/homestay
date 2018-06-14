@@ -1,0 +1,17 @@
+<!--pages/user/money/money.wxml-->
+<!-- 我的钱包——提现 -->
+<view class='my-money'>
+<!-- 钱包明细 -->
+  <view class='money-detail'>
+    <text bindtap='walletDetail'>钱包明细</text>
+  </view>
+  <!-- 金额数量  -->
+  <view class='moeny-count'>
+    <image src='/images/yue.png'></image>
+    <view>
+          <text>￥0.00</text>
+    </view>
+  </view>
+  <!-- 按钮：押金提现 -->
+  <button>押金提现</button>
+</view>

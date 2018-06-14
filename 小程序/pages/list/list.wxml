@@ -1,0 +1,222 @@
+<!--pages/list/list.wxml-->
+
+    <view class="swiper-tab">  
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>  
+        <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">待付款</view>  
+        <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">待入住</view>
+        <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">待评价</view>  
+        <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">完成</view>   
+    </view>  
+
+  <swiper current="{{currentTab}}" class="swiper-box quantu" duration="300" style="height:{{winHeight-50}}px" bindchange="bindChange">  
+     
+    <swiper-item>  
+      <view class='list-list'> 
+         <view class='list-head'>
+             
+             <!-- 待付款 -->
+             <view class='pending-payment' wx:for='{{listData}}' wx:key='{{index}}'> 
+                <image src="{{item.img}}" class='picture-1' bindtap='showDetails'></image>
+                <view class='High-line'>
+                    <view class='High-line-6'>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class='payment-2'>
+                        <text>{{item.time}}</text>
+                    </view>
+                    <view class='payment-3'>
+                        <text class='payment-2'>{{item.night}}</text>
+                        <text class='payment-5'>{{item.price}}</text>
+                    </view>
+                </view>
+                <view class='High-line-1'>
+                    <view class='icture-2'>
+                        <image data-index="{{index}}" src="{{item.delImg}}" class='picture-2' bindtap='delList'></image>
+                    </view>
+                    <view class='utton-1'>
+                        <button class='button-1' bindtap='showPay'>{{item.btn}}</button>
+                    </view>
+                </view>
+            </view>
+            
+            <!-- 待入住 -->
+            <view class='pending-payment' wx:for='{{listData1}}' wx:key='{{index}}'>
+                <image src="/images/banner2.png" class='picture-1'></image>
+                <view class='High-line'>
+                    <view class='High-line-6'>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class='payment-2'>
+                        <text>{{item.time}}</text>
+                    </view>
+                    <view class='payment-3'>
+                        <text class='payment-2'>{{item.night}}</text>
+                        <text class='payment-5'>{{item.price}}</text>
+                    </view>
+                </view>
+                <view class='High-line-7'>
+                    <view class='utton-1'>
+                        <button class='button-3'  bindtap='showViewOrder'>{{item.btn}}</button>
+                    </view>
+                </view>
+            </view>
+            
+            <!-- 待评价 -->
+            <view class='pending-payment' wx:for='{{listData2}}' wx:key='{{index}}'>
+                <image src="/images/banner2.png" class='picture-1'></image>
+                <view class='High-line'>
+                    <view class='High-line-6'>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class='payment-2'>
+                        <text>{{item.time}}</text>
+                    </view>
+                    <view class='payment-3'>
+                        <text class='payment-2'>{{item.night}}</text>
+                        <text class='payment-5'>{{item.price}}</text>
+                    </view>
+                </view>
+                <view class='High-line-1'>
+                    <view class='icture-2'>
+                        <image data-index="{{index}}" src="{{item.delImg}}" class='picture-2' bindtap='delList1'></image>
+                    </view>
+                    <view class='utton-1'>
+                        <button bindtap='showComment' class='button-4'>{{item.btn}}</button>
+                    </view>
+                </view>
+            </view>
+
+            <!-- 已完成 -->
+            <view class='pending-payment' wx:for='{{listData3}}' wx:key='{{index}}'>
+                <image src="/images/banner2.png" class='picture-1'></image>
+                <view class='High-line'>
+                    <view class='High-line-6'>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class='payment-2'>
+                        <text>{{item.time}}</text>
+                    </view>
+                    <view class='payment-3'>
+                        <text class='payment-2'>{{item.night}}</text>
+                        <text class='payment-5'>{{item.price}}</text>
+                    </view>
+                </view>
+                <view class='High-line-1'>
+                    <view class='icture-2'>
+                        <image data-index="{{index}}" src="{{item.delImg}}" class='picture-2' bindtap='delList2'></image>
+                    </view>
+                    <view class='utton-1'>
+                        <button class='button-5' bindtap='showOrderCompletion'>{{item.btn}}</button>
+                    </view>
+                </view>
+            </view>
+
+         </view>
+      </view>  
+    </swiper-item>  
+     
+    <swiper-item>  
+          <!-- 待付款 -->
+             <view class='pending-payment' wx:for='{{listData}}' wx:key='{{index}}'> 
+                <image src="{{item.img}}" class='picture-1'></image>
+                <view class='High-line'>
+                    <view class='High-line-6'>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class='payment-2'>
+                        <text>{{item.time}}</text>
+                    </view>
+                    <view class='payment-3'>
+                        <text class='payment-2'>{{item.night}}</text>
+                        <text class='payment-5'>{{item.price}}</text>
+                    </view>
+                </view>
+                <view class='High-line-1'>
+                    <view class='icture-2'>
+                        <image data-index="{{index}}" src="{{item.delImg}}" class='picture-2' bindtap='delList'></image>
+                    </view>
+                    <view class='utton-1'>
+                        <button class='button-1' bindtap='showOrder'>{{item.btn}}</button>
+                    </view>
+                </view>
+            </view>
+    </swiper-item>  
+     
+    <swiper-item>  
+          <!-- 待入住 -->
+            <view class='pending-payment' wx:for='{{listData1}}' wx:key='{{index}}'>
+                <image src="/images/banner2.png" class='picture-1'></image>
+                <view class='High-line'>
+                    <view class='High-line-6'>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class='payment-2'>
+                        <text>{{item.time}}</text>
+                    </view>
+                    <view class='payment-3'>
+                        <text class='payment-2'>{{item.night}}</text>
+                        <text class='payment-5'>{{item.price}}</text>
+                    </view>
+                </view>
+                <view class='High-line-7'>
+                    <view class='utton-1'>
+                        <button class='button-3'  bindtap='showViewOrder'>{{item.btn}}</button>
+                    </view>
+                </view>
+            </view> 
+    </swiper-item>  
+
+    <swiper-item>  
+         <!-- 待评价 -->
+            <view class='pending-payment' wx:for='{{listData2}}' wx:key='{{index}}'>
+                <image src="/images/banner2.png" class='picture-1'></image>
+                <view class='High-line'>
+                    <view class='High-line-6'>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class='payment-2'>
+                        <text>{{item.time}}</text>
+                    </view>
+                    <view class='payment-3'>
+                        <text class='payment-2'>{{item.night}}</text>
+                        <text class='payment-5'>{{item.price}}</text>
+                    </view>
+                </view>
+                <view class='High-line-1'>
+                    <view class='icture-2'>
+                        <image data-index="{{index}}" src="{{item.delImg}}" class='picture-2' bindtap='delList1'></image>
+                    </view>
+                    <view class='utton-1'>
+                        <button bindtap='showComment' class='button-4'>{{item.btn}}</button>
+                    </view>
+                </view>
+            </view>  
+    </swiper-item>  
+     
+    <swiper-item>  
+           <!-- 已完成 -->
+            <view class='pending-payment' wx:for='{{listData3}}' wx:key='{{index}}'>
+                <image src="/images/banner2.png" class='picture-1'></image>
+                <view class='High-line'>
+                    <view class='High-line-6'>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class='payment-2'>
+                        <text>{{item.time}}</text>
+                    </view>
+                    <view class='payment-3'>
+                        <text class='payment-2'>{{item.night}}</text>
+                        <text class='payment-5'>{{item.price}}</text>
+                    </view>
+                </view>
+                <view class='High-line-1'>
+                    <view class='icture-2'>
+                        <image data-index="{{index}}" src="{{item.delImg}}" class='picture-2' bindtap='delList2'></image>
+                    </view>
+                    <view class='utton-1'>
+                        <button class='button-5' bindtap='showOrderCompletion'>{{item.btn}}</button>
+                    </view>
+                </view>
+            </view>  
+    </swiper-item>
+</swiper>

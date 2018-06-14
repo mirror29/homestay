@@ -1,0 +1,38 @@
+<!--pages/user/FAQ/FAQ.wxml-->
+<!-- 常见问题 -->
+
+<view class='FAQ-view'>
+  <!-- 小顽妹描述 s-->
+   <view class='user-hello-view'>
+    <text class='user-hello'>亲爱的用户您好，您来到这里肯定是出了问题，小顽妹会努力帮您解决问题~</text>
+  </view> 
+  <!-- 小顽妹描述 e-->
+  <!-- 问题视图 s-->
+  <view class='question-view'>
+    <block wx:for="{{content}}">
+        <!-- 问题1 s-->
+        <view class='question-item'>
+          <!-- 提问文本 s-->
+          <view class='question-content' data-changeid="{{item.id}}" bindtap='showHide'>
+            <text class='question-icon-Q'>Q</text>
+            <text class='question-content-title'>{{item.title}}</text>
+          </view>  
+          <!-- 提问文本 e-->
+          <!-- 回答文本 s-->
+          <view class='answer-content' wx:if="{{item.shows}}">
+            <text class='answer-icon-A'>A</text>
+            <text class='answer-content-text'>{{item.contents}}</text>
+          </view>   
+          <!-- 回答文本 e-->
+        </view> <!-- 问题1 e-->
+    </block>
+  </view><!-- 问题视图 e-->
+
+  <!-- 拨打客服电话 s-->
+  <view class='telephone-view'>
+    <text class='telephone-text'>没有您想了解的问题？请拨打客服电话</text>
+    <text class='telephone-number' wx:for="{{phone}}">{{item[0].plannumber}}</text>
+  </view>
+  <!-- 拨打客服电话 e-->
+</view>
+

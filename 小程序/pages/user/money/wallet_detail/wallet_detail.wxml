@@ -1,0 +1,33 @@
+<!--pages/user/money/wallet_detail/wallet_detail.wxml-->
+<!-- 钱包明细 -->
+
+<view class='money-detail-view'>
+  <!-- 提现 s-->
+  <view class='drawings-view money-detail-item'>
+    <view class='drawings-name'>
+      <text class='title-view'>提现</text>
+      <view  class='drawings-time time-view'>
+        <text>2018-06-01</text>
+        <text class='time-text'>09:30:30</text>
+      </view>
+    </view>
+    <view class='drawings-money-count money-count-view'>
+      <text>-500.00</text>
+    </view>
+  </view>
+    <!-- 提现 e-->
+  <!-- 押金 s-->
+  <view  class='deposit-view money-detail-item'>
+    <view class='deposit-name'>
+        <text class='title-view'>押金</text>
+        <view class='deposit-time time-view'>
+          <text>2018-06-01</text>
+          <text class='time-text'>09:30:30</text>
+        </view>
+    </view>
+    <view class='deposit-money-count money-count-view'>
+      <text>+500.00</text>
+    </view>
+  </view>
+    <!-- 押金 e-->
+</view>

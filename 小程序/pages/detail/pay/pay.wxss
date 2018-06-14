@@ -1,0 +1,98 @@
+/* pages/detail/pay/pay.wxss */
+.order-head{
+  margin: 20rpx;
+  padding:10rpx 20rpx 20rpx 20rpx;
+  border-bottom: 5rpx solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-head-left{
+  display: flex;
+}
+
+.order-head-left view{
+  margin-left: 20rpx;
+}
+
+.order-head-left image{
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 10rpx;
+}
+
+.order-head-left-text {
+  margin-top: 60rpx;
+}
+
+.order-head-left-text text{
+  margin:10rpx;
+  font-size: 36rpx;
+}
+
+.order-head-left-text1{
+  color: #FF9800;
+}
+
+.order-head-right{
+  display: flex;
+  flex-direction: column;
+}
+
+.order-head-right image{
+    height: 60rpx;
+    width: 60rpx;
+}
+
+.order-head-right text{
+  margin-top: 60rpx;
+  color: #41ADBD;
+  font-size: 32rpx;
+}
+
+/* 订单列表 */
+.order-con{
+  margin: 20rpx;
+}
+
+.order-li{
+  padding: 20rpx 10rpx;
+  border-bottom: 5rpx solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 底部按钮 */
+.order-foot{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.order-foot view{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 20rpx 0;
+}
+
+.order-foot-left-text1{
+  font-size: 32rpx;
+  margin-top: 8rpx;
+}
+
+.order-foot-left-text2{
+  color: #FF9800;
+  font-size: 44rpx;
+  margin: 0 10rpx;
+}
+
+.order-foot-right{
+  background-color: #54BF6C;
+}
+
+.order-foot-right text{
+  color: #ffffff;
+}

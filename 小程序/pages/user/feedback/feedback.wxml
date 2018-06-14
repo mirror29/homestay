@@ -1,0 +1,21 @@
+<!--pages/user/feedback/feedback.wxml-->
+<!-- 用户反馈 -->
+<view class='user-feedback-view'>
+  <view class='user-feedback-body'>
+    <view class='textarea-content-view'>
+     <textarea clss='textarea-content feedback-font-size' show-confirm-bar='true' adjust-position='true' maxlength='-1' 
+     placeholder='请详细描述您的问题/建议'
+    placeholder-class='textarea-placeholder-class'></textarea>
+  </view>
+    <view class='feedback-input-view feedback-font-size'> 姓<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text>名：
+    <input class='feedback-input' placeholder='请填写' type='text'></input>
+    </view>
+    <view class='feedback-input-view feedback-font-size'>手机号：
+    <input class='feedback-input' placeholder='请填写' type='number'></input>
+    </view>
+       <text class='feedback-telephone feedback-font-size2'>
+    请留下您的联系方式，方便我们更好的与您沟通问题，紧急问题可拨打客服电话0851—000 0000
+    </text>
+  </view>
+  <button class='submit-suggest' bindtap='backUser'>提交建议</button>
+</view>

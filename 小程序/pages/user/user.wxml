@@ -1,0 +1,149 @@
+<!--pages/user/user.wxml-->
+<!-- 我的（用户） -->
+<view class="box1" wx:if="{{type=='房东'}}">
+    <!-- 头部  -->
+    <view class='user-head-bg'>
+      <image class='head-bg-img userinfo-avatar'  src="{{userInfo.avatarUrl}}" background-size="cover"></image>  
+      <view class='head-and-name'>
+        <image class='user-head-img userinfo-avatar'  src="{{userInfo.avatarUrl}}" background-size="cover"
+        bindtap='showPersonalData'></image>
+        <view>
+          <text class="userinfo-nickname user-name">{{userInfo.nickName}}</text>
+        </view>
+      </view>
+    </view>
+
+      <!-- 菜单  -->
+    <view class='grid-menu'>
+    <!-- 实名认证 -->
+      <view class='menu-item' bindtap='showAuthentication'>
+        <view class='menu-item-body'>
+          <image class='menu-img' src='/images/shiming.png'></image>
+          <view>
+            <text class='menu-name'>实名认证</text>
+          </view>
+        </view>
+    </view>
+    <!-- 我的钱包 -->
+    <view class='menu-item' bindtap='showWallet'>
+      <view class='menu-item-body'>
+          <image class='menu-img' src='/images/tixian.png'></image>
+          <view>
+            <text class='menu-name'>我的钱包</text>
+          </view>
+        </view>
+      </view>
+      <!-- 公司简介 -->
+      <view class='menu-item' bindtap='showPresentation'>
+      <view class='menu-item-body company-presentation'>
+          <image class='menu-img' src='/images/jianjie.png'></image>
+          <view>
+            <text class='menu-name'>公司简介</text>
+          </view>
+        </view>
+      </view>
+      <!-- 用户反馈 -->
+      <view class='menu-item  user-feedback' bindtap='showFeedback'>
+      <view class='menu-item-body'>
+          <image class='menu-img' src='/images/fankui.png'></image>
+          <view>
+            <text class='menu-name'>用户反馈</text>
+          </view>
+        </view>
+      </view>
+      <!-- 常见问题 -->
+      <view class='menu-item  FAQ' bindtap='showFAQ'>
+      <view class='menu-item-body'>
+          <image class='menu-img' src='/images/chaxun.png'></image>
+          <view>
+            <text class='menu-name'>常见问题</text>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>
+
+<!-- 房东 -->
+<view class="box2" wx:if="{{type=='用户'}}">
+    <view class='Photo'>
+        <image class='head-bg-img userinfo-avatar' src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <view class='landlord-infor'>
+          <image class='Photo-2 userinfo-avatar' bindtap='showPersonalData' src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+          <text class="userinfo-nickname Typeface-2">{{userInfo.nickName}}</text>
+        </view>      
+    </view>
+    <view class='landlord-head-left'>
+        <text class='Typeface'>收益：5000元</text>
+        <view class='Middle'>
+            <text class='Typeface-1' bindtap='showWallet2'>收益明细</text>
+            <image src='/images/wenhao.png' class='Prompt' bindtap='showModal'></image>
+        </view>
+    </view>
+    <view class='house-1'>
+        <button bindtap="setPlain" class='house' bindtap='addHouse'>添加房源</button>
+    </view>
+    <view class='pending-payment' bindtap='showMyHouse'>
+        <image src="/images/banner2.png" class='picture-1'></image>
+        <view class='High-line'>
+            <view class='High-line-6'>
+                <text>花果园半山小镇</text>
+            </view>
+            <view class='payment-2'>
+                <text>2018年6月1日-2018年6月3日</text>
+            </view>
+            <view class='payment-3'>
+                <text class='payment-2'>订单号：1648484841115</text>
+            </view>
+        </view>
+        <view class='High-line-1'>
+            <view class='utton-1'>
+                <text class='button-1'>待付款</text>
+                <text class='Nights'>(共2晚)</text>
+            </view>
+        </view>
+    </view>
+    <view class='pending-payment' bindtap='showMyHouse'>
+        <image src="/images/banner2.png" class='picture-1'></image>
+        <view class='High-line'>
+            <view class='High-line-6'>
+                <text>花果园半山小镇</text>
+            </view>
+            <view class='payment-2'>
+                <text>2018年6月1日-2018年6月3日</text>
+            </view>
+            <view class='payment-3'>
+                <text class='payment-2'>订单号：1648484841115</text>
+            </view>
+        </view>
+        <view class='High-line-1'>
+            <view class='utton-1'>
+                <text class='button-5'>待入住</text>
+                <text class='Nights'>(共2晚)</text>
+            </view>
+        </view>
+    </view>
+    <view class='pending-payment' bindtap='showMyHouse'>
+        <image src="/images/banner2.png" class='picture-1'></image>
+        <view class='High-line'>
+            <view class='High-line-6'>
+                <text>花果园半山小镇</text>
+            </view>
+            <view class='payment-2'>
+                <text>2018年6月1日-2018年6月3日</text>
+            </view>
+            <view class='payment-3'>
+                <text class='payment-2'>订单号：1648484841115</text>
+            </view>
+        </view>
+        <view class='High-line-1'>
+            <view class='utton-1'>
+                <text class='button-4'>已完成</text>
+                <text class='Nights'>(共2晚)</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+<!-- 切换  -->
+<button class="convert-btn" bindtap="toggle">切换为{{type}}</button>
+

@@ -1,0 +1,106 @@
+/* pages/detail/invoice/invoice.wxss */
+.swiper-tab{  
+    width: 100%;  
+    text-align: center;  
+    line-height: 80rpx;  
+}  
+.swiper-tab-list{ 
+    font-size: 32rpx;  
+    display: inline-block;  
+    width: 33.33%;  
+    color: #777777;  
+}  
+.on{ 
+    color: #FF9800;  
+    border-bottom: 5rpx solid #FF9800;}  
+  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; } 
+
+/* 选项卡内容 */
+.invoice-con{
+  background-color: #f0f0f0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.invoice-li{
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 20rpx;
+  padding:20rpx;
+  box-shadow: 1px 2px 0px 0px rgba(223, 223, 223, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.invoice-li-1{
+  border-bottom:5rpx solid #f0f0f0; 
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoice-li-1 input{
+  font-size: 32rpx;
+}
+
+.invoice-li-2{
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoice-li-2 input{
+  font-size: 32rpx;
+}
+
+.invoice-text-left{
+  margin-right: 40rpx;
+}
+
+.text-price{
+  color: #FF9800;
+}
+
+.swiper-tab2{
+  display: flex;
+}
+
+.group{
+  display: flex;
+  margin-right: 30rpx;
+}
+.group text{
+  font-size: 32rpx;
+  margin-right: 40rpx;
+}
+
+.picker{
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoice-explain{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rpx;
+  padding: 0 10rpx;
+}
+.invoice-explain image{
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 10rpx;
+  margin-top: 15rpx;
+}
+.invoice-explain text{
+  color: #868686;
+  font-size: 28rpx;
+}
+.invoice-btn{
+  background-color: #54BF6C;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  width: 100%;
+  padding: 20rpx 0;
+}

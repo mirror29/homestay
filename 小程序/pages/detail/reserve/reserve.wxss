@@ -1,0 +1,44 @@
+/* pages/reserve/reserve.wxss */
+.whole-page{
+  margin-top: 160rpx;
+}
+
+.picture{
+  width: 100%;
+  height: 144rpx;
+  text-align:center;
+}
+
+.complete{
+  width: 144rpx;
+  height: 144rpx;
+}
+
+.writte-words{
+  font-size: 32rpx;
+  text-align:center;
+  margin-top: 50rpx;
+}
+
+.button-1{
+  display: flex;
+  justify-content:space-around;
+  margin-top: 50rpx;
+}
+
+.next-step-1{
+  font-size:28rpx;
+  border: 1rpx solid #54BF6C;
+  width: 234rpx;
+  color: #54BF6C;
+  background: #fff;
+}
+
+.date{
+  font-size: 28rpx;
+  color: #707070;
+}
+
+.date1{
+  margin-top: 50rpx;
+}

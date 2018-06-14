@@ -1,0 +1,539 @@
+/* pages/detail/detail.wxss */
+.banner image{
+  width: 100%;
+}
+
+/* 详情头部 */
+.detail-head{
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx;
+}
+
+.detail-head-left{
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-head-left-text {
+  color: #707070;
+  font-size: 28rpx;
+  text-align: center;
+  margin: 14rpx auto;
+}
+
+.detail-head-left view{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+}
+
+.detail-head-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detail-head-right-1 image{
+  height: 40rpx;
+  width: 40rpx;
+  margin-left: 40rpx;
+}
+
+.detail-head-right-1 text{
+  color: #FF9800;
+  font-size: 42rpx;
+}
+
+.detail-head-right-text{
+  font-size: 34rpx;
+}
+
+.detail-head-right-2{
+  margin-top: 10rpx;
+}
+
+.detail-head-right-2 image{
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 10rpx;
+}
+
+.detail-head-right-2 text{
+  font-size: 32rpx;
+  color: #41ADBD;
+}
+
+/* 房屋布局 */
+.detail-layout{
+  display: flex;
+  border-bottom: 5rpx solid #f0f0f0;
+  padding-bottom: 8rpx;
+}
+.detail-layout-img image{
+  height: 200rpx;
+  width: 200rpx; 
+}
+.detail-layout-img{
+  border-right: 5rpx solid #f0f0f0;
+  padding: 0 50rpx;
+}
+.detail-layout-text{
+  display: flex;
+  flex-direction: column;
+  padding: 0 20rpx 0 30rpx;
+}
+.detail-layout-text text{
+  font-size: 26rpx;
+}
+
+/* 配套设施 */
+.detail-facilities {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 5rpx solid #f0f0f0;
+  padding-bottom: 20rpx;
+}
+.detail-facilities-text{
+  text-align: center;
+  margin-top: 20rpx;
+}
+.detail-facilities-con{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20rpx 0 0 0;
+}
+.detail-facilities-con view{
+  display: flex;
+  flex-direction: column;
+  margin: 10rpx 20rpx;
+}
+.detail-facilities-con view image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.detail-facilities-con view text{
+  font-size: 26rpx;
+}
+
+/* 日历 */
+.detail-data{
+  border-bottom: 5rpx solid #f0f0f0;
+  padding-bottom: 10rpx;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-lr {
+  flex-direction: row;
+}
+
+.box-rl {
+  flex-direction: row-reverse;
+}
+
+.box-tb {
+  flex-direction: column;
+}
+
+.box-bt {
+  flex-direction: column-reverse;
+}
+
+.box-pack-center {
+  justify-content: center;
+}
+
+.box-pack-start {
+  justify-content: flex-start;
+}
+
+.box-pack-end {
+  justify-content: flex-end;
+}
+
+.box-pack-between {
+  justify-content: space-between;
+}
+
+.box-pack-around {
+  justify-content: space-around;
+}
+
+.box-align-center {
+  align-items: center;
+}
+
+.box-align-start {
+  align-items: flex-start;
+}
+
+.box-align-end {
+  align-items: flex-end;
+}
+
+.self-align-center {
+  align-self: center;
+  margin: 0 auto;
+}
+
+.self-align-start {
+  align-self: flex-start;
+}
+
+.self-align-end {
+  align-self: flex-end;
+}
+
+.self-align-stretch {
+  align-self: stretch;
+}
+
+.box-wrap {
+  flex-wrap: wrap;
+}
+
+.box-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex {
+  flex-grow: 1;
+}
+
+.shrink {
+  flex-shrink: 1;
+}
+
+.bg {
+  background-image: linear-gradient(to bottom, #faefe7, #ffcbd7);
+  overflow: hidden;
+}
+
+.brown-color {
+  color: #784344;
+}
+
+.pink-color {
+  color: #ff629a;
+}
+
+.white-color {
+  color: #fff;
+}
+
+.fs24 {
+  font-size: 24rpx;
+}
+
+.fs28 {
+  font-size: 28rpx;
+}
+
+.fs32 {
+  font-size: 32rpx;
+}
+
+.fs36 {
+  font-size: 36rpx;
+}
+
+.top-handle {
+  height: 80rpx;
+}
+
+.top-handle view{
+  color: #363636;
+}
+
+.prev {
+  text-align: right;
+  height: 80rpx;
+}
+
+.next {
+  height: 80rpx;
+}
+
+.prev-handle {
+  width: 80rpx;
+  height: 100%;
+}
+
+.next-handle {
+  width: 80rpx;
+  height: 100%;
+}
+
+.date-area {
+  width: 50%;
+  height: 80rpx;
+  text-align: center;
+}
+
+.weeks {
+  height: 50rpx;
+  line-height: 50rpx;
+  border-bottom: 5rpx solid #f0f0f0;
+  margin: 10rpx 20rpx;
+  padding-bottom: 10rpx;
+}
+
+.week {
+  text-align: center;
+  color: #363636;
+}
+
+.grid {
+  width: 107.1428571429rpx;
+  margin: 10rpx 0;
+}
+
+.day {
+  width: 60rpx;
+  height: 60rpx;
+  color: #363636;
+  font-size: 26rpx;
+  font-weight: 200;
+}
+
+.border-radius {
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  top: 0;
+  color: #fff;
+}
+
+.pink-bg {
+  background-color: #41ADBD;
+}
+
+.purple-bg {
+  background-color: #41ADBD;
+}
+
+.right-triangle::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 15rpx solid transparent;
+  border-left-color: #ff629a;
+  position: absolute;
+  right: -22rpx;
+  top: 18rpx;
+}
+
+.left-triangle::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 15rpx solid transparent;
+  border-right-color: #ff629a;
+  position: absolute;
+  left: -22rpx;
+  top: 18rpx;
+}
+
+.tips {
+  text-align: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.types {
+  background-color: #ffedf4;
+  height: 50rpx;
+}
+
+.types-desc {
+  padding: 0 20rpx;
+}
+
+.type-name {
+  margin-top: 50rpx;
+  margin-bottom: 30rpx;
+}
+
+.type-desc {
+  padding: 0 35rpx;
+  line-height: 38rpx;
+}
+
+.explain {
+  border-top: 1px solid #eee;
+  width: 90%;
+  margin: 20rpx 5% 20rpx 5%;
+  padding: 20rpx 0;
+}
+
+.explain-title {
+  font-weight: bold;
+  margin-bottom: 15rpx;
+}
+
+.explain-item {
+  padding: 8rpx 20rpx;
+  color: #fff;
+}
+
+.left-border-radius {
+  border-top-left-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+}
+
+.right-border-radius {
+  border-top-right-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+.picker-btns {
+  height: 120rpx;
+  line-height: 120rpx;
+  border-bottom: 1rpx solid #ff7ca0;
+}
+
+.picker-confirm {
+  margin-right: 50rpx;
+}
+
+.picker-cancel {
+  margin-left: 50rpx;
+}
+
+.picker-view {
+  color: #ff7ca0;
+  text-align: center;
+}
+
+.text-top{
+  color: #E24E54;
+  font-size: 24rpx;
+}
+
+.text-foot{
+  color: #FF9800;
+  font-size: 24rpx;
+}
+
+/* 房源描述 */
+.detail-describe{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  border-bottom: 5rpx solid #f0f0f0;
+}
+.detail-describe-tit{
+  text-align: center;
+}
+.detail-describe-con{
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+
+/* 房源规则 */
+.detail-rule{
+  margin: 0rpx 20rpx;
+}
+.detail-rule-li{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 10rpx;
+  border-bottom: 5rpx solid #f0f0f0;
+}
+
+/* 评论 */
+.detail-comment{
+  margin: 20rpx;
+  padding-bottom: 80rpx
+}
+.detail-comment-li{
+  border-bottom: 5rpx solid #f0f0f0;
+  margin-top: 20rpx;
+}
+.detail-comment-tit{
+  display: flex;
+  justify-content: space-between;
+}
+.detail-comment-tit-left{
+  display: flex;
+}
+.detail-comment-tit-left image{
+  height: 84rpx;
+  width: 84rpx;
+  border-radius: 50%;
+}
+.detail-comment-tit-right text{
+  font-size: 28rpx;
+  color: #707070;
+  margin: 50rpx 15rpx;
+}
+.detail-comment-tit-left text{
+  margin: 15rpx 0 0 15rpx;
+}
+.detail-comment-con{
+  margin: 10rpx;
+}
+.detail-comment-text{
+  font-size: 32rpx;
+}
+.detail-comment-img{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rpx;
+}
+.detail-comment-img image{
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 10rpx;
+  margin: 8rpx 15rpx;
+}
+.detail-comment-btn{
+  border: 1px solid #41ADBD;
+  color: #41ADBD;
+  background-color: #fff;
+  font-size: 26rpx;
+  margin: 20rpx auto;
+  width: 40%;
+}
+
+/* 底部按钮 */
+.detail-foot{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 100rpx;
+}
+
+.detail-foot-left{
+  background-color: #54BF6C;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: 25rpx 0;
+  align-items: baseline;
+}
+
+.detail-foot-left .iconfont{
+  font-size: 36rpx;
+  margin-right: 10rpx;
+}
+
+.detail-foot-right{
+  background-color: #41ADBD;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: 25rpx 0;
+}

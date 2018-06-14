@@ -1,0 +1,29 @@
+<!--pages/recruit/recruit.wxml-->
+<view class='background'>
+</view>
+<view class='frame'>
+    <view class='full-name'>
+        <text class='full-name-1'>姓名：</text>
+        <view class='input-box'>
+            <textarea type='text' name='' placeholder='请输入您的真实姓名' class='input-box-1'></textarea>
+        </view>
+    </view>
+    <view class='full-name2'>
+        <text class='full-name-1-1'>手机号：</text>
+        <view class='input-box2'>
+            <textarea type='text' name='' placeholder='请输入您的手机号' class='input-box-1-1'></textarea>
+        </view>
+        <view class='house0'>
+            <button bindtap="setPlain" class='house'>获取验证码</button>
+        </view>
+    </view>
+    <view class='full-name3'>
+        <text class='full-name-1-2'>验证码：</text>
+        <view class='input-box3'>
+            <textarea type='text' name='' placeholder='请输入您收到的验证码' class='input-box-1-2'></textarea>
+        </view>
+    </view>
+</view>
+<view class='next-step'>
+    <button class='next-step-1' bindtap='showRelease'>下一步</button>
+</view>

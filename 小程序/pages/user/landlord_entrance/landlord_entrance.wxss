@@ -1,0 +1,19 @@
+/* pages/user/landlord_entrance/landlord_entrance.wxss */
+/* 房东入口：请先进行实名认证 */
+
+/* --start-- */
+.name-detection-view {
+  text-align: center;
+}
+.name-detection-img {
+  width: 175rpx;
+  height: 175rpx;
+  margin-top: 200rpx;
+}
+.name-detection-tex-view {
+  margin-top: 30rpx;
+}
+.name-detection-text {
+  font-size: 37rpx;
+}
+/* --end-- */

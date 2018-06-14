@@ -1,0 +1,50 @@
+<!--pages/index/quick/quick.wxml-->
+<!-- 快捷找房 -->
+<view class='quick-con'>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+            <text>请选择城市</text>
+            <text>{{region[0]}} {{region[1]}} {{region[2]}} ></text>   
+        </view>
+    </picker>
+
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        <text>请选择分类</text>
+        <text>{{array[index]}} ></text>
+      </view>
+    </picker>
+
+    <picker mode="date" value="{{date}}" start="2018-06-01" end="2019-09-01" bindchange="bindDateChange">
+      <view class="picker">
+        <text>入住时间</text>
+        <text>{{date}} ></text>
+      </view>
+    </picker>
+
+    <picker mode="date" value="{{date}}" start="2018-06-01" end="2019-09-01" bindchange="bindDateChange2">
+      <view class="picker">
+        <text>离店时间</text>
+        <text>{{date2}} ></text>
+      </view>
+    </picker>
+
+    <view class="body-view">
+      <text>请选择价格区间</text>
+      <slider bindchange="slider3change" show-value block-size="20" max="1000" step="5" />
+      <slider bindchange="slider4change" show-value block-size="20" max="1000" step="5" value='300' />
+    </view>
+
+    <view class='other'>
+        <text class='other-text'>其他</text>
+        <view class='other-btn'>
+          <block wx:for="{{array2}}">
+              <view class="chose-txt" data-price="{{item.price}}"  data-id="{{index}}" bindtap="choseTxtColor" style="{{index == id?' right no-repeat; border:1rpx dashed #FF9800; color: #FF9800':'border:1rpx deshed #9C9895;color:gray'}}">  
+                  <text class="chose-p" >{{item}}</text>  
+              </view>
+          </block>  
+        </view>
+    </view>
+
+    <button type='primary' bindtap='showHouse'>立即搜索</button>
+</view>

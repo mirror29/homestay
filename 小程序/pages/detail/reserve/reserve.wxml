@@ -1,0 +1,16 @@
+<!--pages/reserve/reserve.wxml-->
+<view class='whole-page'>
+    <view class='picture'>
+        <image src='/images/success.png' class='complete'></image>
+    </view>
+    <view class='writte-words'>
+        <text>您已成功预定 花果园半山小镇</text>
+        <view class='date1'>
+            <text class='date'>2018年6月1日-2018年6月3日（共两晚）</text>
+        </view>
+    </view>
+    <view class='button-1'>
+        <button class='next-step-1' bindtap='showViewOrder'>查看订单</button>
+        <button class='next-step-1' bindtap='backIndex'>返回首页</button>
+    </view>
+</view>

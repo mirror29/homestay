@@ -1,0 +1,260 @@
+<!--pages/detail/invoice/invoice.wxml-->
+
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">普通纸质发票</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">普通电子发票</view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">专用发票</view>   
+</view>  
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight + 1000}}rpx" bindchange="bindChange">  
+     
+    <swiper-item>  
+        <view class='invoice-con'>
+            <view class='invoice-tit invoice-li'>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>发票内容</text>
+                    <text>住宿服务费</text>
+                </view>
+                <view class='invoice-li-2'>
+                    <text class='invoice-text-left'>发票金额</text>
+                    <text class='text-price'>¥ 658</text>
+                </view>
+            </view>
+
+            <view class='invoice-li'>
+                <view class="swiper-tab2 invoice-li-1">  
+                    <text class='invoice-text-left'>抬头类型</text>
+                    <radio-group class="group">  
+                        <view>
+                            <radio color='' checked='true' class="{{currentTab2==0}}" data-current="0" bindtap="swichNav2"></radio>
+                            <text>公司</text>
+                        </view>
+                        <view>
+                            <radio color='' class="{{currentTab2==1}}" data-current="1" bindtap="swichNav2"></radio>
+                            <text>个人</text>
+                        </view>
+                    </radio-group>       
+                </view>
+                <swiper current="{{currentTab2}}" class="swiper-box" duration="300" style="height:140rpx" bindchange="bindChange2"> 
+                    <swiper-item>  
+                      <view class='invoice-li-1'>
+                          <text class='invoice-text-left'>发票抬头</text>
+                          <input placeholder='公司 / 单位名称'></input>
+                      </view>
+                      <view class='invoice-li-2'>
+                          <text class='invoice-text-left'>纳税人识别号</text>
+                          <input placeholder='公司 / 单位税务登记号'></input>
+                      </view>
+                    </swiper-item> 
+                    <swiper-item>  
+                      <view class='invoice-li-1'>
+                          <text class='invoice-text-left'>发票抬头</text>
+                          <input placeholder='姓名/事业单位/海外公司'></input>
+                      </view>  
+                    </swiper-item> 
+                </swiper>
+            </view>
+
+            <view class='invoice-information invoice-li'>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>收件人姓名</text>
+                    <input placeholder='请填写'></input>
+                </view>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>联系电话</text>
+                    <input placeholder='请填写'></input>
+                </view>
+                <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                    <view class="picker invoice-li-1">
+                        <text>请选择城市</text>
+                        <text>{{region[0]}} {{region[1]}} ></text>   
+                    </view>
+                </picker>
+                <view class='invoice-li-2'>
+                    <text class='invoice-text-left'>详细地址</text>
+                    <input placeholder='请输入详细地址'></input>
+                </view>
+            </view>
+
+            <view class='invoice-li'>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>需付服务费</text>
+                    <text> ¥ 32.9</text>
+                </view>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>需付邮费</text>
+                    <text> ¥ 6</text>
+                </view>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>合计</text>
+                    <text> ¥ 38.9</text>
+                </view>
+                <view class='invoice-explain'>
+                    <image src='/images/gantan.png'></image>
+                    <text>发票将由贵州呆呆盒子科技公司提供，并收取发票金额5%的服务费</text>
+                </view>
+            </view>
+
+            <text class='invoice-btn' bindtap='showInvoice2'>确认支付</text>
+        </view>
+    </swiper-item>  
+     
+    <swiper-item>  
+      <view class='invoice-con'>
+            <view class='invoice-tit invoice-li'>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>发票内容</text>
+                    <text>住宿服务费</text>
+                </view>
+                <view class='invoice-li-2'>
+                    <text class='invoice-text-left'>发票金额</text>
+                    <text class='text-price'>¥ 658</text>
+                </view>
+            </view>
+
+            <view class='invoice-li'>
+                <view class="swiper-tab2 invoice-li-1">  
+                    <text class='invoice-text-left'>抬头类型</text>
+                    <radio-group class="group">  
+                        <view>
+                            <radio color='' checked='true' class="{{currentTab2==0}}" data-current="0" bindtap="swichNav2"></radio>
+                            <text>公司</text>
+                        </view>
+                        <view>
+                            <radio color='' class="{{currentTab2==1}}" data-current="1" bindtap="swichNav2"></radio>
+                            <text>个人</text>
+                        </view>
+                    </radio-group>       
+                </view>
+                <swiper current="{{currentTab2}}" class="swiper-box" duration="300" style="height:140rpx" bindchange="bindChange2"> 
+                    <swiper-item>  
+                      <view class='invoice-li-1'>
+                          <text class='invoice-text-left'>发票抬头</text>
+                          <input placeholder='公司 / 单位名称'></input>
+                      </view>
+                      <view class='invoice-li-2'>
+                          <text class='invoice-text-left'>纳税人识别号</text>
+                          <input placeholder='公司 / 单位税务登记号'></input>
+                      </view>
+                    </swiper-item> 
+                    <swiper-item>  
+                      <view class='invoice-li-1'>
+                          <text class='invoice-text-left'>发票抬头</text>
+                          <input placeholder='姓名/事业单位/海外公司'></input>
+                      </view>  
+                    </swiper-item> 
+                </swiper>
+            </view>
+
+            <view class='invoice-information invoice-li'>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>收件人邮箱</text>
+                    <input placeholder='接受电子发票的邮箱'></input>
+                </view>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>联系电话</text>
+                    <input placeholder='接受通知的手机号'></input>
+                </view>
+              
+            </view>
+
+            <view class='invoice-li'>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>需付服务费</text>
+                    <text> ¥ 32.9</text>
+                </view>
+                <view class='invoice-explain'>
+                    <image src='/images/gantan.png'></image>
+                    <text>发票将由贵州呆呆盒子科技公司提供，并收取发票金额5%的服务费</text>
+                </view>
+            </view>
+
+            <text class='invoice-btn' bindtap='showInvoice2'>确认支付</text>
+        </view> 
+    </swiper-item>  
+     
+    <swiper-item>  
+      <view class='invoice-con'>
+            <view class='invoice-tit invoice-li'>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>发票内容</text>
+                    <text>住宿服务费</text>
+                </view>
+                <view class='invoice-li-2'>
+                    <text class='invoice-text-left'>发票金额</text>
+                    <text class='text-price'>¥ 658</text>
+                </view>
+            </view>
+
+            <view class='invoice-li'>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>公司全称</text>
+                    <input placeholder='公司 / 单位名称'></input>
+                </view>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>纳税人识别号</text>
+                    <input placeholder='公司 / 单位税务登记号'></input>
+                </view>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>公司注册地址</text>
+                    <input placeholder='公司 / 单位注册地址'></input>
+                </view>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>公司注册电话</text>
+                    <input placeholder='公司 / 单位注册电话'></input>
+                </view>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>开户银行</text>
+                    <input placeholder='公司 / 单位开户银行'></input>
+                </view>
+                <view class='invoice-li-2'>
+                    <text class='invoice-text-left'>开户账号</text>
+                    <input placeholder='公司 / 单位开户账号'></input>
+                </view>
+            </view>
+
+            <view class='invoice-information invoice-li'>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>收件人姓名</text>
+                    <input placeholder='请填写'></input>
+                </view>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>联系电话</text>
+                    <input placeholder='请填写'></input>
+                </view>
+                <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                    <view class="picker invoice-li-1">
+                        <text>请选择城市</text>
+                        <text>{{region[0]}} {{region[1]}} ></text>   
+                    </view>
+                </picker>
+                <view class='invoice-li-2'>
+                    <text class='invoice-text-left'>详细地址</text>
+                    <input placeholder='请输入详细地址'></input>
+                </view>
+            </view>
+
+            <view class='invoice-li'>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>需付服务费</text>
+                    <text> ¥ 32.9</text>
+                </view>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>需付邮费</text>
+                    <text> ¥ 6</text>
+                </view>
+                <view class='invoice-li-1'>
+                    <text class='invoice-text-left'>合计</text>
+                    <text> ¥ 38.9</text>
+                </view>
+                <view class='invoice-explain'>
+                    <image src='/images/gantan.png'></image>
+                    <text>发票将由贵州呆呆盒子科技公司提供，并收取发票金额5%的服务费</text>
+                </view>
+            </view>
+
+            <text class='invoice-btn' bindtap='showInvoice2'>确认支付</text>
+        </view>  
+    </swiper-item>  
+
+</swiper>

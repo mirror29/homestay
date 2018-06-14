@@ -1,0 +1,105 @@
+/* pages/comment/comment.wxss */
+.pending-payment{
+  font-size: 30rpx;
+  margin: 30rpx 20rpx;
+  display: flex;
+  justify-content:space-around;
+  border-bottom: 5rpx solid #ccc;
+  height: 180rpx;
+  padding-top: 10rpx;
+  background: #fff;
+  padding-bottom: 20rpx;
+}
+
+.picture-1{
+  width: 180rpx;
+  height: 168rpx;
+  border-radius: 10rpx;
+}
+
+.High-line-6{
+  font-size: 32rpx;
+}
+
+.payment-2{
+  color: #ccc;
+  font-size: 24rpx;
+}
+
+.payment-3{
+  display: flex;
+  justify-content:space-around;
+}
+
+.payment-5{
+  color: rgba(255,152,0,1);
+  padding-left: 5rpx;
+  font-size: 40rpx;
+}
+
+.High-line{
+  line-height:2em;
+}
+
+.High-line-1{
+  display: flex;
+  flex-direction:column;
+  line-height:3.5em;
+}
+
+.input-box-1{
+  font-size: 28rpx;
+  height: 228rpx;
+  width: 610rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+  margin: 30rpx 50rpx;
+  padding: 20rpx 20rpx;
+}
+
+.Upload-text{
+  margin-left: 50rpx;
+}
+
+.picture{
+  flex-direction: row;
+  margin: 20rpx 50rpx;
+  line-height:2.2em;
+  letter-spacing:2.5;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.picture-2{
+  width: 180rpx;
+  height: 168rpx;
+  border-radius: 10rpx;
+  margin:12rpx 18rpx;
+}
+
+.upload{
+  width: 176rpx;
+  height: 164rpx;
+  border:1rpx solid #ccc;
+  border-radius: 10rpx;
+  margin:12rpx 18rpx; 
+}
+
+.upload-1{
+  width: 60rpx;
+  height: 60rpx;
+  padding-top: 55rpx;
+  padding-left: 59rpx;
+}
+
+.bottom-1{
+  background: #54BF6C;
+  color: #fff;
+  text-align:center;
+  width: 100%;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  font-size: 32rpx;
+  position:fixed;
+  bottom: 0rpx;
+}

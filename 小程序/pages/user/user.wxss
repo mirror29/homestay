@@ -1,0 +1,227 @@
+/* pages/user/user.wxss */
+/* 我的 */
+
+/* --start-- */
+/* 头部 */
+.user-head-bg {
+  height: 500rpx;
+}
+.head-bg-img {
+  width: 100%;
+  height: 341rpx;
+  opacity: 0.6;
+}
+.head-and-name {
+   text-align: center;  
+   margin-top: -15%;
+   position: relative;
+}
+.user-head-img {
+  width: 178rpx;
+  height: 178rpx;
+  border-radius: 50%;
+}
+.user-name {
+  font-size: 32rpx;
+}
+
+/* 菜单 */
+.grid-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx; 
+  align-content: center;
+}
+.menu-item {
+  text-align: center;
+  width: 33%;
+  border-bottom: 8rpx solid #f0f0f0;
+}
+.menu-item-body {
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-right: 8rpx solid #f0f0f0;
+}
+.company-presentation {
+  border-right: none;
+}
+.user-feedback {
+  border-bottom: none;
+}
+.FAQ {
+  border-bottom: none;
+}
+.menu-img {
+  width: 75rpx;
+  height: 75rpx;
+}
+.menu-name {
+  font-size: 32rpx;
+}
+
+/* 房东界面 */
+.Photo-1{
+  width: 100%;
+  height: 292rpx;
+  margin: 0px;
+  opacity:0.6
+}
+
+.Photo-2{
+  width: 178rpx;
+  height: 178rpx;
+  margin: 0px;
+  border-radius: 100rpx;
+  position:absolute;
+  top: 239rpx;
+  left: 286rpx;
+}
+
+.Typeface{
+  font-size: 36rpx;
+  color: red;
+  margin-left: 20rpx;
+  margin-top:-100rpx;
+}
+
+.house-1{
+  position:absolute;
+  top: 360rpx;
+  right: 10rpx;
+}
+
+.house{
+  width: 210rpx;
+  background: #54BF6C;
+  color: #fff;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+}
+
+.Typeface-1{
+  font-size: 24rpx;
+}
+
+.Prompt{
+  width: 46rpx;
+  height: 36rpx;
+  margin-left: 90rpx;
+}
+
+.Typeface-2{
+  font-size: 28rpx;
+  color: #FF9800;
+  margin-top: 80rpx;
+}
+
+.landlord-infor{
+  display: flex;
+  justify-content: center;
+}
+
+.landlord-head-left{
+  position: absolute;
+  top: 350rpx;
+}
+
+.Middle{
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pending-payment{
+  font-size: 30rpx;
+  margin: 15rpx 20rpx;
+  display: flex;
+  justify-content:space-around;
+  box-shadow: 1px 2px 0px 0px rgba(218, 218, 218, 1);
+  border: 1px solid #f0f0f0;
+  border-radius: 10rpx;
+  height: 180rpx;
+  padding-top: 15rpx;
+  background: #fff;
+}
+
+.picture-1{
+  width: 180rpx;
+  height: 168rpx;
+  border-radius: 10rpx;
+}
+
+.High-line{
+  line-height:2em;
+}
+
+.High-line-6{
+  font-size: 32rpx;
+}
+
+.payment-2{
+  color: #999;
+  font-size: 24rpx;
+}
+
+.High-line-1{
+  display: flex;
+  flex-direction:column;
+  padding-top: 10rpx;
+}
+
+.utton-1{
+  margin-bottom: 0rpx;
+  display: flex;
+  flex-direction:column;
+}
+
+.button-1{
+  color: #41ADBD;
+  font-size: 24rpx; 
+}
+
+.Nights{
+  color: #999;
+  font-size: 24rpx;
+  margin-top: 30rpx;
+}
+
+.button-4{
+  color: #ccc;
+  font-size: 24rpx;
+}
+
+.button-5{
+  color: #54BF6C;
+  font-size: 24rpx;
+}
+
+.switch{
+  background: #999;
+  width: 256rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.switch-1{
+  margin-top: 30rpx;
+  margin-bottom:20rpx; 
+}
+
+
+/* 切换为房东 按钮 */
+.convert-btn {
+  width: 300rpx;
+  font-size: 30rpx;
+  background-color: #54BF6C;
+  color: #fff;
+  border-radius: 9rpx;
+}
+
+/* --end-- */

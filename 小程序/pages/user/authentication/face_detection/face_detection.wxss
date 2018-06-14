@@ -1,0 +1,63 @@
+/* pages/user/authentication/face_detection/face_detection.wxss */
+/* 页面：人脸识别 */
+
+/* --start-- */
+
+.face-detection-view {
+  text-align: center;
+  position: relative;
+}
+.face-detection-body {
+  margin-top: 200rpx;
+}
+
+/* 人脸框 */
+.person-face-img {
+  border-radius: 50%;
+  width: 278rpx;
+  height: 278rpx;
+}
+
+/* 拍摄说明 & 身份信息*/
+.take-photo-text-view {
+  margin-top: 30rpx;
+}
+.take-photo-text {
+  font-size: 30rpx;
+}
+.identity-card-number {
+  margin-left: 50rpx;
+}
+
+/* 相机 */
+.start-detection-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100rpx;
+}
+.start-detection {
+  border: 1rpx solid #41adbd;
+  border-radius: 50%;
+  width: 130rpx;
+  line-height: 130rpx;
+}
+.start-detection-img {
+  width: 103rpx;
+  height: 103rpx;
+  vertical-align: middle;
+  overflow: hidden;
+  padding-bottom: 10rpx;
+}
+
+/* 按钮：完成验证 */
+.success-detection {
+  font-size: 37rpx;
+  background: #54bf6c;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* --end-- */

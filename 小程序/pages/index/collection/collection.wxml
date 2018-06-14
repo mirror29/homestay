@@ -1,0 +1,69 @@
+<!--pages/index/collection/collection.wxml-->
+<!-- 收藏 -->
+<view class='collection-con'>
+    <view class='recommend-city-li'>
+        <view class='recommend-img'>
+            <image src='/images/banner2.png'></image>
+        </view>
+        
+        <view class='recommend-city-li-foot'>
+            <view class='recommend-city-li-foot1'>
+                <text>花果园半山小镇</text>
+                <image src="/images/shoucang-1.png"></image>
+            </view>
+            <view class='recommend-city-li-foot2'>
+                <view class='recommend-left'>
+                    <image src='/images/dianao.png'></image>
+                    <text>距我2.5公里</text>
+                </view>
+                <view class='recommend-right'>
+                    <text>¥ 329</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class='recommend-city-li'>
+        <view class='recommend-img'>
+            <image src='/images/banner2.png'></image>
+        </view>
+        
+        <view class='recommend-city-li-foot'>
+            <view class='recommend-city-li-foot1'>
+                <text>花果园半山小镇</text>
+                <image src="/images/shoucang-1.png"></image>
+            </view>
+            <view class='recommend-city-li-foot2'>
+                <view class='recommend-left'>
+                    <image src='/images/zhuoyou.png'></image>
+                    <text>距我2.5公里</text>
+                </view>
+                <view class='recommend-right'>
+                    <text>¥ 329</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class='recommend-city-li'>
+        <view class='recommend-img'>
+            <image src='/images/banner2.png'></image>
+        </view>
+        
+        <view class='recommend-city-li-foot'>
+            <view class='recommend-city-li-foot1'>
+                <text>花果园半山小镇</text>
+                <image src="/images/shoucang-1.png"></image>
+            </view>
+            <view class='recommend-city-li-foot2'>
+                <view class='recommend-left'>
+                    <image src='/images/KTV.png'></image>
+                    <text>距我2.5公里</text>
+                </view>
+                <view class='recommend-right'>
+                    <text>¥ 329</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
