@@ -8,9 +8,10 @@
         <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">完成</view>   
     </view>  
 
-  <swiper current="{{currentTab}}" class="swiper-box quantu" duration="300" style="height:{{winHeight-50}}px" bindchange="bindChange">  
+  <swiper current="{{currentTab}}" class="swiper-box quantu" duration="300" style="height:{{winHeight+95}}rpx" bindchange="bindChange">  
      
     <swiper-item>  
+    <scroll-view scroll-y='true' style='height:100%;'>
       <view class='list-list'> 
          <view class='list-head'>
              
@@ -111,11 +112,65 @@
                 </view>
             </view>
 
+             <!-- 已完成 -->
+            <view class='pending-payment' wx:for='{{listData3}}' wx:key='{{index}}'>
+                <image src="/images/banner2.png" class='picture-1'></image>
+                <view class='High-line'>
+                    <view class='High-line-6'>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class='payment-2'>
+                        <text>{{item.time}}</text>
+                    </view>
+                    <view class='payment-3'>
+                        <text class='payment-2'>{{item.night}}</text>
+                        <text class='payment-5'>{{item.price}}</text>
+                    </view>
+                </view>
+                <view class='High-line-1'>
+                    <view class='icture-2'>
+                        <image data-index="{{index}}" src="{{item.delImg}}" class='picture-2' bindtap='delList2'></image>
+                    </view>
+                    <view class='utton-1'>
+                        <button class='button-5' bindtap='showOrderCompletion'>{{item.btn}}</button>
+                    </view>
+                </view>
+            </view>
+
+             <!-- 已完成 -->
+            <view class='pending-payment' wx:for='{{listData3}}' wx:key='{{index}}'>
+                <image src="/images/banner2.png" class='picture-1'></image>
+                <view class='High-line'>
+                    <view class='High-line-6'>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class='payment-2'>
+                        <text>{{item.time}}</text>
+                    </view>
+                    <view class='payment-3'>
+                        <text class='payment-2'>{{item.night}}</text>
+                        <text class='payment-5'>{{item.price}}</text>
+                    </view>
+                </view>
+                <view class='High-line-1'>
+                    <view class='icture-2'>
+                        <image data-index="{{index}}" src="{{item.delImg}}" class='picture-2' bindtap='delList2'></image>
+                    </view>
+                    <view class='utton-1'>
+                        <button class='button-5' bindtap='showOrderCompletion'>{{item.btn}}</button>
+                    </view>
+                </view>
+            </view>
+
+            
+
          </view>
       </view>  
+      </scroll-view>
     </swiper-item>  
      
     <swiper-item>  
+        <scroll-view scroll-y='true' style='height:100%;'>
           <!-- 待付款 -->
              <view class='pending-payment' wx:for='{{listData}}' wx:key='{{index}}'> 
                 <image src="{{item.img}}" class='picture-1'></image>
@@ -140,9 +195,11 @@
                     </view>
                 </view>
             </view>
+        </scroll-view>
     </swiper-item>  
      
     <swiper-item>  
+        <scroll-view scroll-y='true' style='height:100%;'>
           <!-- 待入住 -->
             <view class='pending-payment' wx:for='{{listData1}}' wx:key='{{index}}'>
                 <image src="/images/banner2.png" class='picture-1'></image>
@@ -164,9 +221,11 @@
                     </view>
                 </view>
             </view> 
+        </scroll-view>
     </swiper-item>  
 
     <swiper-item>  
+        <scroll-view scroll-y='true' style='height:100%;'>
          <!-- 待评价 -->
             <view class='pending-payment' wx:for='{{listData2}}' wx:key='{{index}}'>
                 <image src="/images/banner2.png" class='picture-1'></image>
@@ -191,9 +250,11 @@
                     </view>
                 </view>
             </view>  
+        </scroll-view>
     </swiper-item>  
      
     <swiper-item>  
+        <scroll-view scroll-y='true' style='height:100%;'>
            <!-- 已完成 -->
             <view class='pending-payment' wx:for='{{listData3}}' wx:key='{{index}}'>
                 <image src="/images/banner2.png" class='picture-1'></image>
@@ -217,6 +278,7 @@
                         <button class='button-5' bindtap='showOrderCompletion'>{{item.btn}}</button>
                     </view>
                 </view>
-            </view>  
+            </view>
+        </scroll-view>  
     </swiper-item>
 </swiper>
